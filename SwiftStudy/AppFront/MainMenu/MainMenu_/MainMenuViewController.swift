@@ -8,7 +8,8 @@
 import UIKit
 
 class MainMenuViewController: UIViewController {
-    private let viewControllers = [AccessControlViewController()]
+    private let viewControllers = [AccessControlViewController(),
+                                   StaticViewController()]
     private lazy var table: (view: UITableView, cellIdedntifier: String) = {
         let tableView = UITableView()
         tableView.backgroundColor = .red
