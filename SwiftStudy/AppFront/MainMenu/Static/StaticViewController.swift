@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StaticViewController: UIViewController {
+final class StaticViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()

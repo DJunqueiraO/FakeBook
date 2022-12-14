@@ -7,9 +7,10 @@
 
 import UIKit
 
-class MainMenuViewController: UIViewController {
+final class MainMenuViewController: UIViewController {
     private let viewControllers = [AccessControlViewController(),
-                                   StaticViewController()]
+                                   StaticViewController(),
+                                   SpinnerViewController()]
     private lazy var table: (view: UITableView, cellIdedntifier: String) = {
         let tableView = UITableView()
         tableView.backgroundColor = .red

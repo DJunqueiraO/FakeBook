@@ -21,6 +21,11 @@
 		1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */; };
 		1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9E1294A111F00FD4189 /* Video.swift */; };
 		1DB9E9E7294A198800FD4189 /* String_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9E6294A198800FD4189 /* String_.swift */; };
+		1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9EA294A3A9C00FD4189 /* SpinnerViewController.swift */; };
+		1DB9E9ED294A3F9900FD4189 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9EC294A3F9900FD4189 /* Assets.swift */; };
+		1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */; };
+		1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */; };
+		1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		1DB9E9E1294A111F00FD4189 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		1DB9E9E6294A198800FD4189 /* String_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_.swift; sourceTree = "<group>"; };
+		1DB9E9EA294A3A9C00FD4189 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		1DB9E9EC294A3F9900FD4189 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLabel.swift; sourceTree = "<group>"; };
+		1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
+		1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DB9E9E9294A3A8800FD4189 /* Spinner */,
+				1DB9E9E8294A397100FD4189 /* Viper */,
 				1DB9E9DE294A0FA300FD4189 /* Static */,
 				1DB9E9D4294A0A0F00FD4189 /* AccessControl */,
 			);
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9B9294A02B900FD4189 /* Assets.xcassets */,
+				1DB9E9EC294A3F9900FD4189 /* Assets.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -174,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9D7294A0AC800FD4189 /* Create.swift */,
+				1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */,
+				1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */,
+				1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -201,6 +217,21 @@
 				1DB9E9E6294A198800FD4189 /* String_.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		1DB9E9E8294A397100FD4189 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		1DB9E9E9294A3A8800FD4189 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				1DB9E9EA294A3A9C00FD4189 /* SpinnerViewController.swift */,
+			);
+			path = Spinner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,13 +307,18 @@
 				1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */,
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
+				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* String_.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
+				1DB9E9ED294A3F9900FD4189 /* Assets.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
+				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
+				1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */,
+				1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */,
 				1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */,
 				1DB9E9D6294A0A2D00FD4189 /* AccessControllViewController.swift in Sources */,
 			);

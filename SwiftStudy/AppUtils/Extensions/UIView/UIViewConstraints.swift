@@ -76,4 +76,34 @@ extension UIView {
         }
         return self
     }
+@discardableResult
+    func shape(size: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraints([
+            heightAnchor.constraint(equalToConstant: size),
+            widthAnchor.constraint(equalToConstant: size)
+        ])
+        return self
+    }
+@discardableResult
+    func shape(height: CGFloat, width: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraints([
+            heightAnchor.constraint(equalToConstant: height),
+            widthAnchor.constraint(equalToConstant: width)
+        ])
+        return self
+    }
+@discardableResult
+    func shape(height: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraint(heightAnchor.constraint(equalToConstant: height))
+        return self
+    }
+@discardableResult
+    func shape(width: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraint(widthAnchor.constraint(equalToConstant: width))
+        return self
+    }
 }
