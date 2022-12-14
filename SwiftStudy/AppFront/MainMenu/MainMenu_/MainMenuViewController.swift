@@ -52,7 +52,7 @@ extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: table.cellIdedntifier,
                                                  for: indexPath)
         cell.backgroundColor = .yellow
-        let label = Create.label("\(type(of: viewControllers[indexPath.row]))".removeLast(0...13))
+        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))".removeLast(0...13))
         cell.contentView.addSubview(label)
         label.enableAutoLayout
             .constraint(attributes: [.centerX, .centerY])

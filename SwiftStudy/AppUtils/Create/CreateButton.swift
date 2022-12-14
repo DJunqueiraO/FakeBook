@@ -8,7 +8,7 @@
 import UIKit
 
 extension Create {
-    static func button(_ title: String? = nil,
+    func button(_ title: String? = nil,
                        handler: UIActionHandler? = nil) -> UIButton {
         let button = UIButton()
         if let handler = handler {button.addAction(UIAction(handler: handler), for: .touchUpInside)}

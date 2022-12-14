@@ -8,7 +8,7 @@
 import UIKit
 
 extension Create {
-    static func label(_ text: String? = nil) -> UILabel {
+    func label(_ text: String? = nil) -> UILabel {
         let label = UILabel()
         label.text = text
         label.font = UIFont.boldSystemFont(ofSize: 20)

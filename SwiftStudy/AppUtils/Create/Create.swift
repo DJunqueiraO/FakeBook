@@ -7,4 +7,6 @@
 
 import Foundation
 
-struct Create {}
+struct Create {
+    static let element = Self()
+}

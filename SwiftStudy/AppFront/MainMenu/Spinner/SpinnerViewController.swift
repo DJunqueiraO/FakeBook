@@ -16,7 +16,7 @@ final class SpinnerViewController: UIViewController {
         activityIndicator.backgroundColor = .blue
         return activityIndicator
     }()
-    private lazy var button = Create.button("Stop Spinning") {[weak self]_ in
+    private lazy var button = Create.element.button("Stop Spinning") {[weak self]_ in
         if let isAnimating = self?.activityIndicator.isAnimating, isAnimating {
             self?.activityIndicator.stopAnimating()
         } else {
