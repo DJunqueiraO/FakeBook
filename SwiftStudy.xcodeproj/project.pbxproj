@@ -20,6 +20,7 @@
 		1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9D7294A0AC800FD4189 /* Create.swift */; };
 		1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */; };
 		1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9E1294A111F00FD4189 /* Video.swift */; };
+		1DB9E9E7294A198800FD4189 /* String_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9E6294A198800FD4189 /* String_.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1DB9E9D7294A0AC800FD4189 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
 		1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		1DB9E9E1294A111F00FD4189 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		1DB9E9E6294A198800FD4189 /* String_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DB9E9E5294A196B00FD4189 /* String */,
 				1DB9E9CF294A059500FD4189 /* UIScrollView */,
 				1DB9E9CA294A056E00FD4189 /* UIView */,
 			);
@@ -192,6 +195,14 @@
 			path = MainMenu_;
 			sourceTree = "<group>";
 		};
+		1DB9E9E5294A196B00FD4189 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				1DB9E9E6294A198800FD4189 /* String_.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +276,7 @@
 				1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */,
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
+				1DB9E9E7294A198800FD4189 /* String_.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
