@@ -18,6 +18,8 @@
 		1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9D0294A05A800FD4189 /* UIScrollViewHierarchy.swift */; };
 		1DB9E9D6294A0A2D00FD4189 /* AccessControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9D5294A0A2D00FD4189 /* AccessControllViewController.swift */; };
 		1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9D7294A0AC800FD4189 /* Create.swift */; };
+		1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */; };
+		1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9E1294A111F00FD4189 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1DB9E9D0294A05A800FD4189 /* UIScrollViewHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewHierarchy.swift; sourceTree = "<group>"; };
 		1DB9E9D5294A0A2D00FD4189 /* AccessControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessControllViewController.swift; sourceTree = "<group>"; };
 		1DB9E9D7294A0AC800FD4189 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
+		1DB9E9E1294A111F00FD4189 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +136,9 @@
 		1DB9E9D2294A09D300FD4189 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1DB9E9DE294A0FA300FD4189 /* Static */,
 				1DB9E9D4294A0A0F00FD4189 /* AccessControl */,
-				1DB9E9B4294A02B700FD4189 /* MainMenuViewController.swift */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -168,6 +173,23 @@
 				1DB9E9D7294A0AC800FD4189 /* Create.swift */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		1DB9E9DE294A0FA300FD4189 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				1DB9E9DF294A108B00FD4189 /* StaticViewController.swift */,
+				1DB9E9E1294A111F00FD4189 /* Video.swift */,
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		1DB9E9E4294A135200FD4189 /* MainMenu_ */ = {
+			isa = PBXGroup;
+			children = (
+				1DB9E9B4294A02B700FD4189 /* MainMenuViewController.swift */,
+			);
+			path = MainMenu_;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +269,9 @@
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
+				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
+				1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */,
 				1DB9E9D6294A0A2D00FD4189 /* AccessControllViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
