@@ -11,8 +11,14 @@ final class FakeBookView: UIView {
     private lazy var navigationCollectionView = FakeBookNavigationCollectionView(
         imageNames: ["house", "person.and.person", "message", "play.tv", "bell"]
     )
-    private lazy var statusStackView = FakeBookStatusStackView(frame: frame)
-    private lazy var storiesCollectionView = FakeBookStoriesCollectionView()
+    private lazy var statusStackView: FakeBookStatusStackView = {
+        let statusStackView = FakeBookStatusStackView(frame: frame)
+        statusStackView.perfilImage = Assets.Images.gatsu
+        return statusStackView
+    }()
+    private lazy var storiesCollectionView = FakeBookStoriesCollectionView(
+        images: [UIImage(named: "Story_0"), UIImage(named: "Story_1"), UIImage(named: "Story_2"), UIImage(named: "Story_3")]
+    )
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.toScroll(views: [navigationCollectionView, statusStackView, storiesCollectionView])

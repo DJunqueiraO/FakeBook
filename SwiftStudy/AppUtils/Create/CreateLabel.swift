@@ -12,6 +12,7 @@ extension Create {
         let label = UILabel()
         label.text = text
         label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.numberOfLines = 0
         return label
     }
 }
