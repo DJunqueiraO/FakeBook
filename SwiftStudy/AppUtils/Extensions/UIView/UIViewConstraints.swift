@@ -76,4 +76,52 @@ extension UIView {
         }
         return self
     }
+@discardableResult
+    func constraint(attributesMultipliers: [NSLayoutConstraint.Attribute:
+                                           CGFloat],
+                    to item: Any? = nil,
+                    relation: NSLayoutConstraint.Relation = .equal,
+                    constant: CGFloat = 0) -> Self {
+        guard let superview = self.superview else {return self}
+        for attribute in attributesMultipliers {
+            superview.addConstraint(NSLayoutConstraint(item: self,
+                                                       attribute: attribute.key,
+                                                       relatedBy: relation,
+                                                       toItem: item ?? superview,
+                                                       attribute: attribute.key,
+                                                       multiplier: attribute.value,
+                                                       constant: constant))
+        }
+        return self
+    }
+@discardableResult
+    func shape(size: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraints([
+            heightAnchor.constraint(equalToConstant: size),
+            widthAnchor.constraint(equalToConstant: size)
+        ])
+        return self
+    }
+@discardableResult
+    func shape(height: CGFloat, width: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraints([
+            heightAnchor.constraint(equalToConstant: height),
+            widthAnchor.constraint(equalToConstant: width)
+        ])
+        return self
+    }
+@discardableResult
+    func shape(height: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraint(heightAnchor.constraint(equalToConstant: height))
+        return self
+    }
+@discardableResult
+    func shape(width: CGFloat) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraint(widthAnchor.constraint(equalToConstant: width))
+        return self
+    }
 }

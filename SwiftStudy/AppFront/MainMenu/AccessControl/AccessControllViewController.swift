@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AccessControlViewController: UIViewController {
+final class AccessControlViewController: UIViewController {
     fileprivate func printLero() {
         print("Lero Lero")
     }
