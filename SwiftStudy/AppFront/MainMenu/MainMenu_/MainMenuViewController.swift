@@ -22,6 +22,10 @@ final class MainMenuViewController: UIViewController {
                            forCellReuseIdentifier: identifier)
         return (view: tableView, cellIdedntifier: identifier)
     }()
+    override func viewDidDisappear(_ animated: Bool) {
+        table.view.isUserInteractionEnabled = true
+        super.viewDidDisappear(animated)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -43,6 +47,7 @@ extension MainMenuViewController: Setup {
 
 extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.isUserInteractionEnabled = false
         navigationController?.pushViewController(viewControllers[indexPath.row],
                                                  animated: true)
     }

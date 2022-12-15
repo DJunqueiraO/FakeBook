@@ -13,7 +13,7 @@ extension Create {
         let button = UIButton()
         if let handler = handler {button.addAction(UIAction(handler: handler), for: .touchUpInside)}
         button.setTitle(title, for: .normal)
-        button.setTitleColor(Assets.Colors.reverseDark, for: .normal)
+        button.setTitleColor(.label, for: .normal)
         return button
     }
 }

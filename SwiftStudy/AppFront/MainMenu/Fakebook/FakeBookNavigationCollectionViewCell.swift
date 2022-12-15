@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FakeBookCollectionViewCell: UICollectionViewCell {
+final class FakeBookNavigationCollectionViewCell: UICollectionViewCell {
     lazy var image: String = String() {
         didSet {
             imageView.image = UIImage(systemName: image)
@@ -36,7 +36,7 @@ final class FakeBookCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension FakeBookCollectionViewCell: Setup {
+extension FakeBookNavigationCollectionViewCell: Setup {
     func configure() {
         contentView.addSubview(imageView)
     }
