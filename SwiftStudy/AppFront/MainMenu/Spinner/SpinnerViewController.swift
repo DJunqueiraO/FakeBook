@@ -31,7 +31,7 @@ final class SpinnerViewController: UIViewController {
 
 extension SpinnerViewController: Setup {
     func configure() {
-        view.backgroundColor = .label
+        view.backgroundColor = Assets.Colors.reverseDark
         view.addSubviews([activityIndicator, button])
     }
     func constrain() {

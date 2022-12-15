@@ -10,7 +10,7 @@ import UIKit
 extension Create {
     func navigationController(rootViewController: UIViewController) -> UINavigationController {
         let navigationController = UINavigationController(rootViewController: rootViewController)
-        navigationController.navigationBar.tintColor = Assets.Colors.reverseDark
+        navigationController.navigationBar.tintColor = .label
         return navigationController
     }
 }

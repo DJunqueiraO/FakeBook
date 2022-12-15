@@ -10,7 +10,8 @@ import UIKit
 final class MainMenuViewController: UIViewController {
     private let viewControllers = [AccessControlViewController(),
                                    StaticViewController(),
-                                   SpinnerViewController()]
+                                   SpinnerViewController(),
+                                   FakeBookViewController()]
     private lazy var table: (view: UITableView, cellIdedntifier: String) = {
         let tableView = UITableView()
         tableView.backgroundColor = .red
@@ -53,9 +54,13 @@ extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
                                                  for: indexPath)
         cell.backgroundColor = .yellow
         let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))".removeLast(0...13))
+        label.textColor = .black
         cell.contentView.addSubview(label)
         label.enableAutoLayout
             .constraint(attributes: [.centerX, .centerY])
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return view.frame.height*0.1
     }
 }
