@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
+		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
+		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
 		1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9B0294A02B700FD4189 /* AppDelegate.swift */; };
 		1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9B2294A02B700FD4189 /* SceneDelegate.swift */; };
 		1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9B4294A02B700FD4189 /* MainMenuViewController.swift */; };
@@ -27,13 +30,19 @@
 		1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */; };
 		1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */; };
 		1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */; };
-		1DBBEBB4294B7FBF00739C73 /* FakeBookCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB3294B7FBF00739C73 /* FakeBookCollectionView.swift */; };
+		1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */; };
 		1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB5294B847A00739C73 /* FakeBookView.swift */; };
 		1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB9294B920400739C73 /* UIViewUnderline.swift */; };
-		1DBBEBBC294B945400739C73 /* FakeBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBB294B945400739C73 /* FakeBookCollectionViewCell.swift */; };
+		1DBBEBBC294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBB294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift */; };
+		1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */; };
+		1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */; };
+		1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
+		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
+		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1DB9E9AD294A02B700FD4189 /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB9E9B0294A02B700FD4189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB9E9B2294A02B700FD4189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,10 +65,13 @@
 		1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 		1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigationController.swift; sourceTree = "<group>"; };
 		1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewController.swift; sourceTree = "<group>"; };
-		1DBBEBB3294B7FBF00739C73 /* FakeBookCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookCollectionView.swift; sourceTree = "<group>"; };
+		1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookNavigationCollectionView.swift; sourceTree = "<group>"; };
 		1DBBEBB5294B847A00739C73 /* FakeBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookView.swift; sourceTree = "<group>"; };
 		1DBBEBB9294B920400739C73 /* UIViewUnderline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUnderline.swift; sourceTree = "<group>"; };
-		1DBBEBBB294B945400739C73 /* FakeBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DBBEBBB294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookNavigationCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStatusStackView.swift; sourceTree = "<group>"; };
+		1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewHierarchy.swift; sourceTree = "<group>"; };
+		1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D413981294BA474005BFA16 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		1D413984294BB710005BFA16 /* FakeBookNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEBBB294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift */,
+				1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */,
+			);
+			path = FakeBookNavigation;
+			sourceTree = "<group>";
+		};
+		1D413985294BB723005BFA16 /* FakeBookStories */ = {
+			isa = PBXGroup;
+			children = (
+				1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */,
+				1DBBEBC2294BA26000739C73 /* FakeBookStoriesCollectionView.swift */,
+			);
+			path = FakeBookStories;
+			sourceTree = "<group>";
+		};
+		1D413986294BB737005BFA16 /* FakeBookStatus */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEBBD294B9D1C00739C73 /* FakeBookStatusStackView.swift */,
+			);
+			path = FakeBookStatus;
+			sourceTree = "<group>";
+		};
+		1D413987294BB955005BFA16 /* FakeBookView */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEBB5294B847A00739C73 /* FakeBookView.swift */,
+			);
+			path = FakeBookView;
+			sourceTree = "<group>";
+		};
+		1D413988294BB95B005BFA16 /* FakeBookViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */,
+			);
+			path = FakeBookViewController;
+			sourceTree = "<group>";
+		};
+		1D413989294BBA18005BFA16 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		1DB9E9A4294A02B700FD4189 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +174,7 @@
 		1DB9E9C4294A02C000FD4189 /* AppUtils */ = {
 			isa = PBXGroup;
 			children = (
+				1D413989294BBA18005BFA16 /* SwiftUI */,
 				1DB9E9DB294A0AD700FD4189 /* Create */,
 				1DB9E9DA294A0AD000FD4189 /* Setup */,
 				1DB9E9D9294A0ACB00FD4189 /* Assets */,
@@ -132,6 +203,8 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1D413981294BA474005BFA16 /* UINavigationController */,
+				1DBBEBBF294B9E0000739C73 /* UIStackView */,
 				1DB9E9E5294A196B00FD4189 /* String */,
 				1DB9E9CF294A059500FD4189 /* UIScrollView */,
 				1DB9E9CA294A056E00FD4189 /* UIView */,
@@ -249,12 +322,21 @@
 		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
 			isa = PBXGroup;
 			children = (
-				1DBBEBBB294B945400739C73 /* FakeBookCollectionViewCell.swift */,
-				1DBBEBB3294B7FBF00739C73 /* FakeBookCollectionView.swift */,
-				1DBBEBB5294B847A00739C73 /* FakeBookView.swift */,
-				1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */,
+				1D413988294BB95B005BFA16 /* FakeBookViewController */,
+				1D413987294BB955005BFA16 /* FakeBookView */,
+				1D413986294BB737005BFA16 /* FakeBookStatus */,
+				1D413985294BB723005BFA16 /* FakeBookStories */,
+				1D413984294BB710005BFA16 /* FakeBookNavigation */,
 			);
 			path = Fakebook;
+			sourceTree = "<group>";
+		};
+		1DBBEBBF294B9E0000739C73 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */,
+			);
+			path = UIStackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,19 +415,25 @@
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
+				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
-				1DBBEBB4294B7FBF00739C73 /* FakeBookCollectionView.swift in Sources */,
+				1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
 				1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */,
+				1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */,
 				1DB9E9ED294A3F9900FD4189 /* Assets.swift in Sources */,
+				1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */,
+				1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
+				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
 				1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */,
 				1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */,
-				1DBBEBBC294B945400739C73 /* FakeBookCollectionViewCell.swift in Sources */,
+				1DBBEBBC294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift in Sources */,
 				1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */,
+				1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */,
 				1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */,
 				1DB9E9D6294A0A2D00FD4189 /* AccessControllViewController.swift in Sources */,
 				1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FakeBookCollectionView: UICollectionView {
+final class FakeBookNavigationCollectionView: UICollectionView {
     private let identifier = "Cell"
     private var imageNames: [String] = [] {
         didSet {
@@ -26,21 +26,21 @@ final class FakeBookCollectionView: UICollectionView {
     }
 }
 
-extension FakeBookCollectionView: Setup {
+extension FakeBookNavigationCollectionView: Setup {
     func configure() {
         delegate = self
         dataSource = self
-        register(FakeBookCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
+        register(FakeBookNavigationCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
     }
 }
 
-extension FakeBookCollectionView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension FakeBookNavigationCollectionView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageNames.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
-        guard let cell = cell as? FakeBookCollectionViewCell else {return cell}
+        guard let cell = cell as? FakeBookNavigationCollectionViewCell else {return cell}
         cell.image = imageNames[indexPath.row]
         return cell
     }
