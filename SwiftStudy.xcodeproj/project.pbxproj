@@ -27,7 +27,6 @@
 		1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */; };
 		1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */; };
 		1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */; };
-		1DBBEBB2294B7B8F00739C73 /* UINavigationItemHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB1294B7B8F00739C73 /* UINavigationItemHierarchy.swift */; };
 		1DBBEBB4294B7FBF00739C73 /* FakeBookCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB3294B7FBF00739C73 /* FakeBookCollectionView.swift */; };
 		1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB5294B847A00739C73 /* FakeBookView.swift */; };
 		1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB9294B920400739C73 /* UIViewUnderline.swift */; };
@@ -57,7 +56,6 @@
 		1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 		1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigationController.swift; sourceTree = "<group>"; };
 		1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewController.swift; sourceTree = "<group>"; };
-		1DBBEBB1294B7B8F00739C73 /* UINavigationItemHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemHierarchy.swift; sourceTree = "<group>"; };
 		1DBBEBB3294B7FBF00739C73 /* FakeBookCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookCollectionView.swift; sourceTree = "<group>"; };
 		1DBBEBB5294B847A00739C73 /* FakeBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookView.swift; sourceTree = "<group>"; };
 		1DBBEBB9294B920400739C73 /* UIViewUnderline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUnderline.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1DBBEBB0294B7B6900739C73 /* UINavigationItem */,
 				1DB9E9E5294A196B00FD4189 /* String */,
 				1DB9E9CF294A059500FD4189 /* UIScrollView */,
 				1DB9E9CA294A056E00FD4189 /* UIView */,
@@ -260,14 +257,6 @@
 			path = Fakebook;
 			sourceTree = "<group>";
 		};
-		1DBBEBB0294B7B6900739C73 /* UINavigationItem */ = {
-			isa = PBXGroup;
-			children = (
-				1DBBEBB1294B7B8F00739C73 /* UINavigationItemHierarchy.swift */,
-			);
-			path = UINavigationItem;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,7 +329,6 @@
 			files = (
 				1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */,
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
-				1DBBEBB2294B7B8F00739C73 /* UINavigationItemHierarchy.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
