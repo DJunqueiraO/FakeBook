@@ -61,7 +61,6 @@ final class FakeBookPostView: UIView {
     }
     private func createPostContentImageView(_ image: UIImage) {
         let postContentImageView = Create.element.imageView(image)
-        postContentImageView.backgroundColor = .blue
         postContent.stackView.addArrangedSubview(postContentImageView)
         postContentImageView.enableAutoLayout
             .constraint(attributesAttributes: [.height: .width])

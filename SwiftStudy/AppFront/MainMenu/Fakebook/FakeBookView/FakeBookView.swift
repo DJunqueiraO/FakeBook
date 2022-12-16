@@ -13,12 +13,15 @@ final class FakeBookView: UIView {
         description: "\tSe você busca muito alguma coisa, é certo que deixará outras no meio do caminho. Só me sinto vivo quando estou usando a minha espada. Humanos são fracos e morrem facilmente. Mas não importa o quão fracos somos, não importa o quanto somos torturados, não importa quanta dor sentimos, nós ainda queremos viver."),
                                          FakeBookPost(
         perfilImage: .griffith, image: nil, name: "Griffith",
-        description: "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu.")]
+        description: "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu."),
+                                         FakeBookPost(
+                                            perfilImage: .godo, image: .dragonSlayer, name: "Godo",
+        description: "\tEla era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro.")]
     private var stories: [FakeBookStory] = [
         FakeBookStory(image: UIImage(named: "Story_0"), name: "Lero Lero"),
-        FakeBookStory(image: UIImage(named: "Story_1"), name: "Lero Lero"),
-        FakeBookStory(image: UIImage(named: "Story_2"), name: "Lero Lero"),
-        FakeBookStory(image: UIImage(named: "Story_3"), name: "Lero Lero")
+        FakeBookStory(image: UIImage(named: "Story_1"), name: "Pin Pin Style"),
+        FakeBookStory(image: UIImage(named: "Story_2"), name: "Judeau"),
+        FakeBookStory(image: UIImage(named: "Story_3"), name: "Caska")
     ]
     private lazy var navigationCollectionView = FakeBookNavigationCollectionView(
         imageNames: ["house", "person.and.person", "message", "play.tv", "bell"]
