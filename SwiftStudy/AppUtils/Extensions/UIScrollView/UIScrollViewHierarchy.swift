@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIScrollView {
-    @discardableResult func toScroll(views: [UIView]) -> UIStackView {
+    @discardableResult func toScroll(views: [UIView] = []) -> UIStackView {
         removeSubviews()
         let stackView = UIStackView(arrangedSubviews: views)
         stackView.axis = .vertical

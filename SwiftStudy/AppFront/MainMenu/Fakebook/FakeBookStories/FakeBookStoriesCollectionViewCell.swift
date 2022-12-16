@@ -17,35 +17,33 @@ final class FakeBookStoriesCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func setupAsPerfilStory(_ image: UIImage?, name: String) {
-        imageView.image = image
-        label.text = name
-        label.enableAutoLayout
-            .constraint(attributes: [.leading, .trailing, .bottom])
-        label.textColor = .black
-        createPlusFakeButton()
+    func setupAsPerfilStory(_ fakeBookStory: FakeBookStory) {
+        imageView.image = fakeBookStory.image
         imageView.enableAutoLayout
             .constraint(attributes: [.top, .leading, .trailing])
             .constraint(attribute: .height, multiplier: 0.6)
+        let button = UIImageView(image: .plus)
+        button.tintColor = .label
+        button.backgroundColor = .reverseDark
+        contentView.addSubview(button)
+        button.enableAutoLayout
+            .constraint(attributesAttributes: [.centerY: .bottom, .centerX: .centerX],
+                        to: imageView)
+            .constraint(attributesAttributes: [.height: .height, .width: .height], multiplier: 0.2)
+        button.layer.cornerRadius = frame.height*0.1
+        label.text = fakeBookStory.name
+        label.enableAutoLayout
+            .constraint(attributes: [.leading, .trailing, .bottom])
+        label.textColor = .black
     }
-    func setupStory(_ image: UIImage?, name: String) {
-        imageView.image = image
-        label.text = name
+    func setupStory(_ fakeBookStory: FakeBookStory) {
+        imageView.image = fakeBookStory.image
+        imageView.enableAutoLayout
+            .constraint(attributes: [.top, .leading, .trailing, .bottom])
+        label.text = fakeBookStory.name
         label.enableAutoLayout
             .constraint(attributes: [.leading, .trailing, .bottom])
         label.textColor = .white
-        imageView.enableAutoLayout
-            .constraint(attributes: [.top, .leading, .trailing, .bottom])
-    }
-    private func createPlusFakeButton() {
-        let button = UIImageView(image: Assets.Images.plus)
-        button.tintColor = .label
-        button.backgroundColor = Assets.Colors.reverseDark
-        contentView.addSubview(button)
-        button.enableAutoLayout
-            .constraint(attributesConstants: [.centerY: frame.height*0.075, .centerX: 0])
-            .constraint(attributesAttributes: [.height: .height, .width: .height], multiplier: 0.2)
-        button.layer.cornerRadius = frame.height*0.2
     }
 }
 

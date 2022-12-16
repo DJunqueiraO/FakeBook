@@ -10,9 +10,9 @@ import UIKit
 final class FakeBookViewController: UIViewController {
     private lazy var rightBarButtonItems: [UIBarButtonItem] = {
         let search = UIBarButtonItem()
-        search.image = Assets.Images.search
+        search.image = .search
         let configuration = UIBarButtonItem()
-        configuration.image = Assets.Images.lines
+        configuration.image = .lines
         return [configuration, search]
     }()
     override func viewDidLoad() {
