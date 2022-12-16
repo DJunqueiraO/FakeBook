@@ -8,21 +8,11 @@
 import UIKit
 
 final class FakeBookView: UIView {
-    private var perfil = FakeBookPerfil(image: "Gatsu", name: "Gatsu")
-    private var posts: [FakeBookPost] = [FakeBookPost(
-        perfilImage: "Gatsu", image: nil, name: "Gatsu",
-        description: "\tSe você busca muito alguma coisa, é certo que deixará outras no meio do caminho. Só me sinto vivo quando estou usando a minha espada. Humanos são fracos e morrem facilmente. Mas não importa o quão fracos somos, não importa o quanto somos torturados, não importa quanta dor sentimos, nós ainda queremos viver."),
-                                         FakeBookPost(
-        perfilImage: "Griffith", image: nil, name: "Griffith",
-        description: "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu."),
-                                         FakeBookPost(
-                                            perfilImage: "Godo", image: "DragonSlayer", name: "Godo",
-        description: "\tEla era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro.")]
-    private lazy var stories: [FakeBookStory] = [FakeBookStory(image: perfil.image, name: "Adicionar ao Story")] {
-        didSet {
-            storiesCollectionView.fakeBookStories = stories
-        }
-    }
+    private lazy var fakeBookViewModel: FakeBookViewModel = {
+        let fakeBookViewModel = FakeBookViewModel()
+        fakeBookViewModel.delegate = self
+        return fakeBookViewModel
+    }()
     private lazy var navigationCollectionView = FakeBookNavigationCollectionView(
         imageNames: ["house", "person.and.person", "message", "play.tv", "bell"]
     )
@@ -66,18 +56,8 @@ extension FakeBookView: Setup {
     func configure() {
         addSubview(scroll.view)
         backgroundColor = .reverseDark
-        statusStackView.perfilImage = .gatsu
-        storiesCollectionView.fakeBookStories = stories
+        fakeBookViewModel.loadData()
         scroll.toScrollStackView.addArrangedSubviews([navigationCollectionView, statusStackView, storiesStackView])
-        for post in posts {
-            createPostView(post)
-        }
-        stories += [
-            FakeBookStory(image: "Story_0", name: "Lero Lero"),
-            FakeBookStory(image: "Story_1", name: "Pin Pin Style"),
-            FakeBookStory(image: "Story_2", name: "Judeau"),
-            FakeBookStory(image: "Story_3", name: "Caska")
-        ]
     }
     func constrain() {
         scroll.view.enableAutoLayout
@@ -88,5 +68,21 @@ extension FakeBookView: Setup {
             .shape(height: frame.height*0.1)
         storiesStackView.enableAutoLayout
             .shape(height: frame.height*0.2)
+    }
+}
+
+extension FakeBookView: FakeBookViewModelDelegate {
+    func fakeBookViewModel(_ perfilImage: String) {
+        statusStackView.perfilImage = UIImage(named: perfilImage)
+    }
+    func fakeBookViewModel(_ post: FakeBookPost) {
+        Task {[weak self] in
+            self?.createPostView(post)
+        }
+    }
+    func fakeBookViewModel(_ stories: [FakeBookStory]) {
+        Task {[weak self] in
+            self?.storiesCollectionView.fakeBookStories = stories
+        }
     }
 }
