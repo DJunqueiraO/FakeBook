@@ -10,9 +10,10 @@ import UIKit
 final class FakeBookPostView: UIView {
     var post: FakeBookPost? = nil {
         didSet {
-            perfilButton.setImage(post?.perfilImage, for: .normal)
+            if let image = post?.perfilImage {perfilButton.setImage(UIImage(named: image), for: .normal)}
             perfilName.label.text = post?.name
-            if let postImage = post?.image {createPostContentImageView(postImage)}
+            if let image = post?.image,
+               let postImage = UIImage(named: image) {createPostContentImageView(postImage)}
             postContent.label.text = post?.description
         }
     }

@@ -5,9 +5,8 @@
 //  Created by Josicleison Elves on 16/12/22.
 //
 
-import UIKit
+import Foundation
 
-struct FakeBookPost {
-    let perfilImage, image: UIImage?
-    let name, description: String?
+struct FakeBookPost: Codable {
+    let perfilImage, image, name, description: String?
 }
