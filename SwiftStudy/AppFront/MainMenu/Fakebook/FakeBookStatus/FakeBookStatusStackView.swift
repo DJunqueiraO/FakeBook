@@ -19,20 +19,21 @@ final class FakeBookStatusStackView: UIView {
         perfilButton.imageView?.clipsToBounds = true
         return perfilButton
     }()
-    private lazy var galeryStackView: UIStackView = {
-        let galleryButton = Create.element.button("Foto")
-        let galleryIcon = UIImageView(image: Assets.Images.gallery)
-        galleryIcon.contentMode = .scaleAspectFit
-        let galeryStackView = UIStackView(arrangedSubviews: [galleryIcon,
-                                                             galleryButton])
-        galeryStackView.axis = .vertical
-        return galeryStackView
-    }()
     private lazy var statusTextField: UITextField = {
         let statusTextField = UITextField()
-        statusTextField.backgroundColor = Assets.Colors.weakDark
+        statusTextField.backgroundColor = .weakDark
         statusTextField.layer.cornerRadius = frame.height*0.025
         return statusTextField
+    }()
+    private lazy var galeryStackView: UIStackView = {
+        let galleryButton = Create.element.button("Foto")
+        let galleryIcon = UIImageView(image: .gallery)
+        galleryIcon.contentMode = .scaleAspectFit
+        let galeryStackView = UIStackView(
+            arrangedSubviews: [galleryIcon, galleryButton]
+        )
+        galeryStackView.axis = .vertical
+        return galeryStackView
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,12 +46,13 @@ final class FakeBookStatusStackView: UIView {
 
 extension FakeBookStatusStackView: Setup {
     func configure() {
+        backgroundColor = .reverseDark
         addSubviews([perfilButton, statusTextField, galeryStackView])
     }
     func constrain() {
         perfilButton.enableAutoLayout
             .constraint(attributes: [.leading, .centerY])
-            .shape(height: frame.height*0.1, width: frame.width*0.2)
+            .constraint(attributesMultipliers: [.height: 0.9, .width: 0.2])
         perfilButton.imageView?.enableAutoLayout
             .constraint(attributes: [.centerX, .centerY])
             .constraint(attributes: [.width, .height],
@@ -61,6 +63,6 @@ extension FakeBookStatusStackView: Setup {
             .shape(height: frame.height*0.07, width: frame.width*0.6)
         galeryStackView.enableAutoLayout
             .constraint(attributes: [.centerY, .trailing])
-            .shape(width: frame.width*0.2)
+            .constraint(attribute: .width, multiplier: 0.2)
     }
 }

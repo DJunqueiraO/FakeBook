@@ -10,7 +10,7 @@ import UIKit
 final class SpinnerViewController: UIViewController {
     private let activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large)
-        activityIndicator.color = Assets.Colors.reverseDark
+        activityIndicator.color = .reverseDark
         activityIndicator.hidesWhenStopped = false
         activityIndicator.startAnimating()
         activityIndicator.backgroundColor = .blue
@@ -31,7 +31,7 @@ final class SpinnerViewController: UIViewController {
 
 extension SpinnerViewController: Setup {
     func configure() {
-        view.backgroundColor = Assets.Colors.reverseDark
+        view.backgroundColor = .reverseDark
         view.addSubviews([activityIndicator, button])
     }
     func constrain() {

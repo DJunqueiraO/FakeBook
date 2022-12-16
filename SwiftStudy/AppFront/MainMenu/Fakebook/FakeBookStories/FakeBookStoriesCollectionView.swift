@@ -9,17 +9,17 @@ import UIKit
 
 final class FakeBookStoriesCollectionView: UICollectionView {
     private let identifier = "Cell"
-    var images: [UIImage?] = [] {
+    var fakeBookStories: [FakeBookStory] = [] {
         didSet {
             reloadData()
         }
     }
-    init(images: [UIImage?]) {
+    init(fakeBookStories: [FakeBookStory]) {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         super.init(frame: .zero, collectionViewLayout: layout)
         setup()
-        self.images = images
+        self.fakeBookStories = fakeBookStories
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -38,23 +38,23 @@ extension FakeBookStoriesCollectionView: UICollectionViewDelegate,
                                          UICollectionViewDataSource,
                                          UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return fakeBookStories.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
             guard let cell = cell as? FakeBookStoriesCollectionViewCell else {return cell}
-            cell.setupAsPerfilStory(images[indexPath.row], name: "Lero Lero")
+            cell.setupAsPerfilStory(fakeBookStories[indexPath.row])
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
             guard let cell = cell as? FakeBookStoriesCollectionViewCell else {return cell}
-            cell.setupStory(images[indexPath.row], name: "Lero Lero")
+            cell.setupStory(fakeBookStories[indexPath.row])
             return cell
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width*0.3,
-                      height: collectionView.frame.height)
+                      height: collectionView.frame.height*0.95)
     }
 }

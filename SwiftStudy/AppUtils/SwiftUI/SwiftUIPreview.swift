@@ -22,3 +22,9 @@ struct SwiftUI: UIViewControllerRepresentable {
         return self.init(viewController)
     }
 }
+
+struct SwiftUIView_Previews: PreviewProvider {
+    static var previews: some View {
+        SwiftUI.show(FakeBookViewController())
+    }
+}
