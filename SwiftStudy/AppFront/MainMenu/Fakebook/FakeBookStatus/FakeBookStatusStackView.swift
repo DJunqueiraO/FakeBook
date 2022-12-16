@@ -55,12 +55,11 @@ extension FakeBookStatusStackView: Setup {
             .constraint(attributesMultipliers: [.height: 0.9, .width: 0.2])
         perfilButton.imageView?.enableAutoLayout
             .constraint(attributes: [.centerX, .centerY])
-            .constraint(attributes: [.width, .height],
-                        multiplier: 0.7)
+            .constraint(attributes: [.width, .height], multiplier: 0.7)
             .layer.cornerRadius = frame.height*0.7*0.05
         statusTextField.enableAutoLayout
             .constraint(attributes: [.centerY, .centerX])
-            .shape(height: frame.height*0.07, width: frame.width*0.6)
+            .constraint(attributes: [.height, .width], multiplier: 0.6)
         galeryStackView.enableAutoLayout
             .constraint(attributes: [.centerY, .trailing])
             .constraint(attribute: .width, multiplier: 0.2)

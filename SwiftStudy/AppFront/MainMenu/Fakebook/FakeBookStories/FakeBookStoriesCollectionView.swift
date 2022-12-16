@@ -14,7 +14,7 @@ final class FakeBookStoriesCollectionView: UICollectionView {
             reloadData()
         }
     }
-    init(fakeBookStories: [FakeBookStory]) {
+    init(fakeBookStories: [FakeBookStory] = []) {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         super.init(frame: .zero, collectionViewLayout: layout)

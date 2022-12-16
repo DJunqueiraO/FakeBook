@@ -77,18 +77,18 @@ extension FakeBookPostView: Setup {
         postStackView.enableAutoLayout
             .constraint(attributes: [.top, .leading, .trailing, .bottom])
         perfilButton.enableAutoLayout
-            .shape(height: frame.width*0.2,
-                   width: frame.width*0.2)
+            .constraint(attribute: .width, multiplier: 0.2)
+            .constraint(attributesAttributes: [.height: .width], to: perfilButton)
         perfilButton.imageView?.enableAutoLayout
             .constraint(attributes: [.centerX, .centerY])
             .constraint(attributes: [.width, .height],
                         multiplier: 0.7)
             .layer.cornerRadius = frame.height*0.7*0.25*0.2
         perfilName.stackView.enableAutoLayout
-            .shape(width: frame.width*0.6)
+            .constraint(attribute: .width, multiplier: 0.6)
         plusButton.enableAutoLayout.enableAutoLayout
-            .shape(height: frame.width*0.2,
-                   width: frame.width*0.2)
+            .constraint(attribute: .width, multiplier: 0.2)
+            .constraint(attributesAttributes: [.height: .width], to: perfilButton)
         plusButton.imageView?.enableAutoLayout
             .constraint(attributes: [.centerX, .centerY])
             .constraint(attributes: [.width, .height],

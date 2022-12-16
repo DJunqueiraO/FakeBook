@@ -14,22 +14,30 @@ final class FakeBookView: UIView {
                                          FakeBookPost(
         perfilImage: .griffith, image: nil, name: "Griffith",
         description: "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu.")]
+    private var stories: [FakeBookStory] = [
+        FakeBookStory(image: UIImage(named: "Story_0"), name: "Lero Lero"),
+        FakeBookStory(image: UIImage(named: "Story_1"), name: "Lero Lero"),
+        FakeBookStory(image: UIImage(named: "Story_2"), name: "Lero Lero"),
+        FakeBookStory(image: UIImage(named: "Story_3"), name: "Lero Lero")
+    ]
     private lazy var navigationCollectionView = FakeBookNavigationCollectionView(
         imageNames: ["house", "person.and.person", "message", "play.tv", "bell"]
     )
     private lazy var statusStackView: FakeBookStatusStackView = {
         let statusStackView = FakeBookStatusStackView(frame: frame)
-        statusStackView.perfilImage = .gatsu
         return statusStackView
     }()
-    private lazy var storiesCollectionView = FakeBookStoriesCollectionView(
-        fakeBookStories: [
-            FakeBookStory(image: UIImage(named: "Story_0"), name: "Lero Lero"),
-            FakeBookStory(image: UIImage(named: "Story_1"), name: "Lero Lero"),
-            FakeBookStory(image: UIImage(named: "Story_2"), name: "Lero Lero"),
-            FakeBookStory(image: UIImage(named: "Story_3"), name: "Lero Lero")
-        ]
-    )
+    private lazy var storiesCollectionView = FakeBookStoriesCollectionView()
+    private lazy var storiesStackView: UIStackView = {
+        let storiesStackView = UIStackView(arrangedSubviews: [storiesCollectionView])
+        storiesStackView.backgroundColor = .reverseDark
+        storiesStackView.isLayoutMarginsRelativeArrangement = true
+        storiesStackView.layoutMargins = UIEdgeInsets(top: frame.height*0.005,
+                                                      left: frame.height*0.01,
+                                                      bottom: frame.height*0.005,
+                                                      right: 0)
+        return storiesStackView
+    }()
     private lazy var scroll: (view: UIScrollView, toScrollStackView: UIStackView) = {
         let scrollView = UIScrollView()
         let stackView = scrollView.toScroll()
@@ -55,7 +63,9 @@ extension FakeBookView: Setup {
     func configure() {
         addSubview(scroll.view)
         backgroundColor = .reverseDark
-        scroll.toScrollStackView.addArrangedSubviews([navigationCollectionView, statusStackView, storiesCollectionView])
+        statusStackView.perfilImage = .gatsu
+        storiesCollectionView.fakeBookStories = stories
+        scroll.toScrollStackView.addArrangedSubviews([navigationCollectionView, statusStackView, storiesStackView])
         for post in posts {
             createPostView(post)
         }
@@ -67,7 +77,7 @@ extension FakeBookView: Setup {
             .shape(height: frame.height*0.075)
         statusStackView.enableAutoLayout
             .shape(height: frame.height*0.1)
-        storiesCollectionView.enableAutoLayout
+        storiesStackView.enableAutoLayout
             .shape(height: frame.height*0.2)
     }
 }
