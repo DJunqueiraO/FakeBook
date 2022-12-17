@@ -18,7 +18,7 @@ final class FakeBookStoriesCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     func setupAsPerfilStory(_ fakeBookStory: FakeBookStory) {
-        imageView.image = fakeBookStory.image
+        if let image = fakeBookStory.image {imageView.image = UIImage(named: image)}
         imageView.enableAutoLayout
             .constraint(attributes: [.top, .leading, .trailing])
             .constraint(attribute: .height, multiplier: 0.6)
@@ -37,7 +37,7 @@ final class FakeBookStoriesCollectionViewCell: UICollectionViewCell {
         label.textColor = .black
     }
     func setupStory(_ fakeBookStory: FakeBookStory) {
-        imageView.image = fakeBookStory.image
+        if let image = fakeBookStory.image {imageView.image = UIImage(named: image)}
         imageView.enableAutoLayout
             .constraint(attributes: [.top, .leading, .trailing, .bottom])
         label.text = fakeBookStory.name
