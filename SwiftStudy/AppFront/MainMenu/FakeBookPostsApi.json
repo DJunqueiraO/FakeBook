@@ -13,8 +13,14 @@
     },
     {
         "perfilImage": "Godo",
-        "image": null,
+        "image": "DragonSlayer",
         "name": "Godo",
         "description": "\tEla era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro."
+    },
+    {
+        "perfilImage": "Gatsu",
+        "image": null,
+        "name": "Gatsu",
+        "description": "\tSó me sinto vivo quando estou usando a minha espada."
     }
 ]
