@@ -46,6 +46,7 @@
 		1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */; };
 		1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */; };
 		1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */; };
+		1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAAA1429511CA100098126 /* resizeImageView.swift */; };
 		1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */; };
 		1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */; };
 		1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB5294B847A00739C73 /* FakeBookView.swift */; };
@@ -98,6 +99,7 @@
 		1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLabel.swift; sourceTree = "<group>"; };
 		1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 		1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigationController.swift; sourceTree = "<group>"; };
+		1DBAAA1429511CA100098126 /* resizeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resizeImageView.swift; sourceTree = "<group>"; };
 		1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewController.swift; sourceTree = "<group>"; };
 		1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookNavigationCollectionView.swift; sourceTree = "<group>"; };
 		1DBBEBB5294B847A00739C73 /* FakeBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookView.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DBAAA1329511C6300098126 /* UIButton */,
 				1DA7C807294CBE25009E1368 /* UIImage */,
 				1DA7C7FC294CA917009E1368 /* UIColor */,
 				1D413981294BA474005BFA16 /* UINavigationController */,
@@ -430,6 +433,14 @@
 			path = Feed_;
 			sourceTree = "<group>";
 		};
+		1DBAAA1329511C6300098126 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAAA1429511CA100098126 /* resizeImageView.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +533,7 @@
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
 				1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */,
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
+				1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1D66F430294D1E4D00797CDF /* Network.swift in Sources */,

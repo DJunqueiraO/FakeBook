@@ -23,18 +23,20 @@ final class FakeBookPostView: UIView {
         perfilButton.imageView?.clipsToBounds = true
         return perfilButton
     }()
-    private lazy var perfilName: (stackView: UIStackView, label: UILabel) = {
+    private struct PerfilName {let stackView: UIStackView, label: UILabel}
+    private lazy var perfilName: PerfilName = {
         let perfilNameLabel = Create.element.label()
         let perfilNameStackView = UIStackView(arrangedSubviews: [perfilNameLabel])
         perfilNameStackView.axis = .vertical
-        return (stackView: perfilNameStackView, label: perfilNameLabel)
+        return PerfilName(stackView: perfilNameStackView, label: perfilNameLabel)
     }()
     private lazy var plusButton: UIButton = {
         let plusButton = Create.element.button(image: .plus)
         plusButton.tintColor = .lightGray
         return plusButton
     }()
-    private lazy var postContent: (stackView: UIStackView, label: UILabel) = {
+    private struct PostContent {let stackView: UIStackView, label: UILabel}
+    private lazy var postContent: PostContent = {
         let descriptionLabel = Create.element.label()
         descriptionLabel.font = UIFont.systemFont(ofSize: 15)
         let descriptionStackView = UIStackView(arrangedSubviews: [descriptionLabel])
@@ -46,19 +48,25 @@ final class FakeBookPostView: UIView {
                                                           right:  frame.width*0.025)
         let postContentStackView = UIStackView(arrangedSubviews: [descriptionStackView])
         postContentStackView.axis = .vertical
-        return (stackView: postContentStackView, label: descriptionLabel)
+        return PostContent(stackView: postContentStackView, label: descriptionLabel)
     }()
-    private lazy var buttonsStackView: UIStackView = {
-        let likeButton = Create.element.button("Like")
-        let commentButton = Create.element.button("Comment")
-        let shareButton = Create.element.button("Share")
+    private struct Buttons {
+        let stackView: UIStackView, like: UIButton, comment: UIButton, share: UIButton
+    }
+    private lazy var buttons: Buttons = {
+        let likeButton = Create.element.button("Like", image: .star)
+        let commentButton = Create.element.button("Comment", image: .message)
+        let shareButton = Create.element.button("Share", image: .share)
         let buttonsStackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
         buttonsStackView.distribution = .fillEqually
-        return buttonsStackView
+        return Buttons(stackView: buttonsStackView,
+                       like: likeButton,
+                       comment: commentButton,
+                       share: shareButton)
     }()
     private lazy var postStackView: UIStackView = {
         let perfilStackView = UIStackView(arrangedSubviews: [perfilButton, perfilName.stackView, plusButton])
-        let postStackView = Create.element.stackView(arrangedSubviews: [perfilStackView, postContent.stackView, buttonsStackView])
+        let postStackView = Create.element.stackView(arrangedSubviews: [perfilStackView, postContent.stackView, buttons.stackView])
         return postStackView
     }()
     override init(frame: CGRect) {
@@ -101,5 +109,7 @@ extension FakeBookPostView: Setup {
             .constraint(attributes: [.centerX, .centerY])
             .constraint(attributes: [.width, .height],
                         multiplier: 0.5)
+        buttons.stackView.enableAutoLayout
+            .constraint(attributesAttributes: [.height: .width], multiplier: 0.05)
     }
 }
