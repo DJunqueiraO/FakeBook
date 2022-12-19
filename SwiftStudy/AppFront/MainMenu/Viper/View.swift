@@ -20,29 +20,44 @@ class UserViewController: UIViewController, AnyView {
         let identifier = "Cell"
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: identifier)
-        tableView.isHidden = true
         return (view: tableView, cellIdentifier: identifier)
     }()
+    var users: [User] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .reverseDark
         table.view.delegate = self
         table.view.dataSource = self
     }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        table.view.frame = view.bounds
+    }
     func update(with users: [User]) {
-        
+        DispatchQueue.main.async {
+            self.users = users
+            self.table.view.reloadData()
+        }
     }
     func update(with error: String) {
-        
+        print(error)
     }
 }
 
 extension UserViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return users.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: table.cellIdentifier,
-                                             for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: table.cellIdentifier,
+                                                 for: indexPath)
+        let label = Create.element.label(users[indexPath.row].name ?? "")
+        cell.contentView.addSubview(label)
+        label.enableAutoLayout
+            .constraint(attributes: [.centerX, .centerY])
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.height*0.2
     }
 }
