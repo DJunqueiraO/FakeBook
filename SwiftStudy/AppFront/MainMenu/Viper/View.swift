@@ -26,12 +26,15 @@ class UserViewController: UIViewController, AnyView {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .reverseDark
+        view.addSubview(table.view)
         table.view.delegate = self
         table.view.dataSource = self
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        table.view.frame = view.bounds
+        table.view.enableAutoLayout
+            .constraint(attributes: [.top, .leading, .trailing, .bottom],
+                        to: view.safeAreaLayoutGuide)
     }
     func update(with users: [User]) {
         DispatchQueue.main.async {
@@ -52,12 +55,13 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: table.cellIdentifier,
                                                  for: indexPath)
         let label = Create.element.label(users[indexPath.row].name ?? "")
+        label.backgroundColor = .reverseDark
         cell.contentView.addSubview(label)
         label.enableAutoLayout
-            .constraint(attributes: [.centerX, .centerY])
+            .constraint(attributes: [.leading, .centerY])
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height*0.2
+        return tableView.frame.height*0.1
     }
 }
