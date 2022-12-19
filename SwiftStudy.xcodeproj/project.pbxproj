@@ -406,7 +406,15 @@
 			path = Spinner;
 			sourceTree = "<group>";
 		};
-		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
+		1DBAAA0F29510F5500098126 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAAA1029510F7100098126 /* Feed_ */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1DBAAA1029510F7100098126 /* Feed_ */ = {
 			isa = PBXGroup;
 			children = (
 				1D66F433294D273D00797CDF /* FakeBookPostsApi.json */,
@@ -418,6 +426,14 @@
 				1DA7C7F6294C9CA7009E1368 /* FakeBookPostView */,
 				1D413987294BB955005BFA16 /* FakeBookView */,
 				1D413988294BB95B005BFA16 /* FakeBookViewController */,
+			);
+			path = Feed_;
+			sourceTree = "<group>";
+		};
+		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAAA0F29510F5500098126 /* Feed */,
 			);
 			path = Fakebook;
 			sourceTree = "<group>";
