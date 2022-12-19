@@ -48,9 +48,17 @@ final class FakeBookPostView: UIView {
         postContentStackView.axis = .vertical
         return (stackView: postContentStackView, label: descriptionLabel)
     }()
+    private lazy var buttonsStackView: UIStackView = {
+        let likeButton = Create.element.button("Like")
+        let commentButton = Create.element.button("Comment")
+        let shareButton = Create.element.button("Share")
+        let buttonsStackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
+        buttonsStackView.distribution = .fillEqually
+        return buttonsStackView
+    }()
     private lazy var postStackView: UIStackView = {
         let perfilStackView = UIStackView(arrangedSubviews: [perfilButton, perfilName.stackView, plusButton])
-        let postStackView = Create.element.stackView(arrangedSubviews: [perfilStackView, postContent.stackView])
+        let postStackView = Create.element.stackView(arrangedSubviews: [perfilStackView, postContent.stackView, buttonsStackView])
         return postStackView
     }()
     override init(frame: CGRect) {
