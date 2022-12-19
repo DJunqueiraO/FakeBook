@@ -8,39 +8,19 @@
 import UIKit
 
 final class SpinnerViewController: UIViewController {
-    private let activityIndicator: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(style: .large)
-        activityIndicator.color = .reverseDark
-        activityIndicator.hidesWhenStopped = false
-        activityIndicator.startAnimating()
-        activityIndicator.backgroundColor = .blue
-        return activityIndicator
-    }()
-    private lazy var button = Create.element.button("Stop Spinning") {[weak self]_ in
-        if let isAnimating = self?.activityIndicator.isAnimating, isAnimating {
-            self?.activityIndicator.stopAnimating()
-        } else {
-            self?.activityIndicator.startAnimating()
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    private func exercice() {
+        let array = [1,2,3,4,5,6]
+        print(array.map{$0 + 1})
     }
 }
 
 extension SpinnerViewController: Setup {
     func configure() {
-        view.backgroundColor = .reverseDark
-        view.addSubviews([activityIndicator, button])
-    }
-    func constrain() {
-        activityIndicator.enableAutoLayout
-            .constraint(attributes: [.centerY, .centerX])
-            .shape(size: 100)
-        button.enableAutoLayout
-            .shape(height: 55)
-            .constraint(attributes: [.leading, .trailing, .bottom],
-                        to: view.safeAreaLayoutGuide)
+        view = SpinnerView()
+        exercice()
     }
 }

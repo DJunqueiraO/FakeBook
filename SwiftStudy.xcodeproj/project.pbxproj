@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */; };
+		1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1A2950DBB9000CF9A7 /* View.swift */; };
+		1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */; };
+		1D2FDC1F2950DBD5000CF9A7 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1E2950DBD5000CF9A7 /* Presenter.swift */; };
+		1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC202950DBE1000CF9A7 /* Entity.swift */; };
+		1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC222950DBED000CF9A7 /* Router.swift */; };
 		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
@@ -51,6 +57,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		1D2FDC1A2950DBB9000CF9A7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		1D2FDC1E2950DBD5000CF9A7 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1D2FDC202950DBE1000CF9A7 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		1D2FDC222950DBED000CF9A7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -303,8 +315,6 @@
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
 				1DBBEBAD294B576B00739C73 /* Fakebook */,
-				1D66F433294D273D00797CDF /* FakeBookPostsApi.json */,
-				1D66F435294D290500797CDF /* FakeBookStoriesApi.json */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
 				1DB9E9E8294A397100FD4189 /* Viper */,
 				1DB9E9DE294A0FA300FD4189 /* Static */,
@@ -378,6 +388,11 @@
 		1DB9E9E8294A397100FD4189 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
+				1D2FDC1A2950DBB9000CF9A7 /* View.swift */,
+				1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */,
+				1D2FDC1E2950DBD5000CF9A7 /* Presenter.swift */,
+				1D2FDC202950DBE1000CF9A7 /* Entity.swift */,
+				1D2FDC222950DBED000CF9A7 /* Router.swift */,
 			);
 			path = Viper;
 			sourceTree = "<group>";
@@ -386,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9EA294A3A9C00FD4189 /* SpinnerViewController.swift */,
+				1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */,
 			);
 			path = Spinner;
 			sourceTree = "<group>";
@@ -393,6 +409,8 @@
 		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
 			isa = PBXGroup;
 			children = (
+				1D66F433294D273D00797CDF /* FakeBookPostsApi.json */,
+				1D66F435294D290500797CDF /* FakeBookStoriesApi.json */,
 				1DA7C804294CB96B009E1368 /* FakeBookModel */,
 				1D413984294BB710005BFA16 /* FakeBookNavigation */,
 				1D413986294BB737005BFA16 /* FakeBookStatus */,
@@ -486,6 +504,7 @@
 			files = (
 				1DB9E9D8294A0AC800FD4189 /* Create.swift in Sources */,
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
+				1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */,
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
@@ -506,16 +525,21 @@
 				1DA7C80B294CBF94009E1368 /* FakeBookStory.swift in Sources */,
 				1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */,
 				1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */,
+				1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
+				1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */,
 				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
+				1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
+				1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */,
 				1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */,
 				1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */,
 				1DBBEBBC294B945400739C73 /* FakeBookNavigationCollectionViewCell.swift in Sources */,
 				1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */,
+				1D2FDC1F2950DBD5000CF9A7 /* Presenter.swift in Sources */,
 				1DBBEBC3294BA26000739C73 /* FakeBookStoriesCollectionView.swift in Sources */,
 				1DB9E9E0294A108B00FD4189 /* StaticViewController.swift in Sources */,
 				1DB9E9D6294A0A2D00FD4189 /* AccessControllViewController.swift in Sources */,
