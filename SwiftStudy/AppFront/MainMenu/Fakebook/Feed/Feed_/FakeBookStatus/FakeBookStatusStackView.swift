@@ -13,12 +13,7 @@ final class FakeBookStatusStackView: UIView {
             perfilButton.setImage(perfilImage, for: .normal)
         }
     }
-    private lazy var perfilButton: UIButton = {
-        let perfilButton = Create.element.button()
-        perfilButton.imageView?.contentMode = .scaleAspectFill
-        perfilButton.imageView?.clipsToBounds = true
-        return perfilButton
-    }()
+    private lazy var perfilButton = FakeBookPerfilButton()
     private lazy var statusTextField: UITextField = {
         let statusTextField = UITextField()
         statusTextField.backgroundColor = .weakDark
@@ -53,10 +48,6 @@ extension FakeBookStatusStackView: Setup {
         perfilButton.enableAutoLayout
             .constraint(attributes: [.leading, .centerY])
             .constraint(attributesMultipliers: [.height: 0.9, .width: 0.2])
-        perfilButton.imageView?.enableAutoLayout
-            .constraint(attributes: [.centerX, .centerY])
-            .constraint(attributes: [.width, .height], multiplier: 0.7)
-            .layer.cornerRadius = frame.height*0.7*0.05
         statusTextField.enableAutoLayout
             .constraint(attributes: [.centerY, .centerX])
             .constraint(attributes: [.height, .width], multiplier: 0.6)

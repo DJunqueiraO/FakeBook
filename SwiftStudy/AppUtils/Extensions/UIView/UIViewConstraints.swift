@@ -104,6 +104,15 @@ extension UIView {
         return self
     }
 @discardableResult
+    func shape(size: CGSize) -> Self {
+        guard let superview = self.superview else {return self}
+        superview.addConstraints([
+            heightAnchor.constraint(equalToConstant: size.height),
+            widthAnchor.constraint(equalToConstant: size.width)
+        ])
+        return self
+    }
+@discardableResult
     func shape(height: CGFloat, width: CGFloat) -> Self {
         guard let superview = self.superview else {return self}
         superview.addConstraints([
