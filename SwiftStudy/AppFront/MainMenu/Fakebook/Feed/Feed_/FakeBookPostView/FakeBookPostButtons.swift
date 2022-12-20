@@ -14,13 +14,9 @@ final class FakeBookPostButtonsStackView: UIStackView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        print("init", Calendar.current.component(.nanosecond, from: Date()))
     }
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    override func layoutSubviews() {
-        print("layoutSubviews", Calendar.current.component(.nanosecond, from: Date()))
     }
 }
 

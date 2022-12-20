@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0A9A8229522BF30024137D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A9A8129522BF30024137D /* LoginView.swift */; };
 		1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */; };
 		1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1A2950DBB9000CF9A7 /* View.swift */; };
 		1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D0A9A8129522BF30024137D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		1D2FDC1A2950DBB9000CF9A7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0A9A8029522BE40024137D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A9A8129522BF30024137D /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1D413981294BA474005BFA16 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +335,7 @@
 				1DB9E9E8294A397100FD4189 /* Viper */,
 				1DB9E9DE294A0FA300FD4189 /* Static */,
 				1DB9E9D4294A0A0F00FD4189 /* AccessControl */,
+				1D0A9A8029522BE40024137D /* Login */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -536,6 +547,7 @@
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
 				1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */,
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
+				1D0A9A8229522BF30024137D /* LoginView.swift in Sources */,
 				1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
