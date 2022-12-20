@@ -10,29 +10,18 @@ import UIKit
 final class FakeBookPostStackView: UIStackView {
     var post: FakeBookPost? = nil {
         didSet {
-            if let image = post?.perfilImage {perfilButton.setImage(UIImage(named: image), for: .normal)}
-            perfilName.label.text = post?.name
+            if let image = post?.perfilImage {
+                perfilStackView.perfilButton.setImage(UIImage(named: image), for: .normal)
+            }
+            perfilStackView.perfilName.label.text = post?.name
             if let image = post?.image,
                let postImage = UIImage(named: image) {createPostContentImageView(postImage)}
             postContent.label.text = post?.description
         }
     }
-    private lazy var perfilButton: UIButton = {
-        let perfilButton = Create.element.button()
-        perfilButton.imageView?.contentMode = .scaleAspectFill
-        perfilButton.imageView?.clipsToBounds = true
-        return perfilButton
-    }()
-    private lazy var perfilName: (stackView: UIStackView, label: UILabel) = {
-        let perfilNameLabel = Create.element.label()
-        let perfilNameStackView = UIStackView(arrangedSubviews: [perfilNameLabel])
-        perfilNameStackView.axis = .vertical
-        return (stackView: perfilNameStackView, label: perfilNameLabel)
-    }()
-    private lazy var plusButton: UIButton = {
-        let plusButton = Create.element.button(image: .plus)
-        plusButton.tintColor = .lightGray
-        return plusButton
+    private lazy var perfilStackView: FakeBookPostPerfilStackView = {
+        let perfilStackView = FakeBookPostPerfilStackView()
+        return perfilStackView
     }()
     private lazy var postContent: (stackView: UIStackView, label: UILabel) = {
         let descriptionLabel = Create.element.label()
@@ -51,10 +40,6 @@ final class FakeBookPostStackView: UIStackView {
     private lazy var buttonsStackView: FakeBookPostButtonsStackView = {
         let buttonsStackView = FakeBookPostButtonsStackView()
         return buttonsStackView
-    }()
-    private lazy var perfilStackView: UIStackView = {
-        let perfilStackView = UIStackView(arrangedSubviews: [perfilButton, perfilName.stackView, plusButton])
-        return perfilStackView
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -78,20 +63,10 @@ extension FakeBookPostStackView: Setup {
         addArrangedSubviews([perfilStackView, postContent.stackView, buttonsStackView])
     }
     func constrain() {
-        perfilButton.enableAutoLayout
+        perfilStackView.perfilButton.enableAutoLayout
             .constraint(attribute: .width, multiplier: 0.2)
-            .constraint(attributesAttributes: [.height: .width], to: perfilButton)
-        perfilButton.imageView?.enableAutoLayout
-            .constraint(attributes: [.centerX, .centerY])
-            .constraint(attributes: [.width, .height],
-                        multiplier: 0.7)
-            .layer.cornerRadius = frame.height*0.7*0.25*0.2
-        plusButton.enableAutoLayout.enableAutoLayout
+            .constraint(attributesAttributes: [.height: .width], multiplier: 0.2)
+        perfilStackView.plusButton.enableAutoLayout.enableAutoLayout
             .constraint(attribute: .width, multiplier: 0.2)
-            .constraint(attributesAttributes: [.height: .width], to: perfilButton)
-        plusButton.imageView?.enableAutoLayout
-            .constraint(attributes: [.centerX, .centerY])
-            .constraint(attributes: [.width, .height],
-                        multiplier: 0.5)
     }
 }
