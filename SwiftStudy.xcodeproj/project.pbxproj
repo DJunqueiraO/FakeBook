@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D0A9A8229522BF30024137D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A9A8129522BF30024137D /* LoginView.swift */; };
+		1D0A9A842952305B0024137D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A9A832952305B0024137D /* LoginViewModel.swift */; };
+		1D0A9A86295233A00024137D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A9A85295233A00024137D /* LoginViewController.swift */; };
 		1D2FDC192950CA8A000CF9A7 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */; };
 		1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1A2950DBB9000CF9A7 /* View.swift */; };
 		1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */; };
@@ -61,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		1D0A9A8129522BF30024137D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1D0A9A832952305B0024137D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1D0A9A85295233A00024137D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1D2FDC182950CA8A000CF9A7 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		1D2FDC1A2950DBB9000CF9A7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		1D2FDC1C2950DBC7000CF9A7 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				1D0A9A8129522BF30024137D /* LoginView.swift */,
+				1D0A9A832952305B0024137D /* LoginViewModel.swift */,
+				1D0A9A85295233A00024137D /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -555,6 +561,7 @@
 				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
+				1D0A9A86295233A00024137D /* LoginViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
 				1DA7C806294CB97F009E1368 /* FakeBookPost.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
@@ -570,6 +577,7 @@
 				1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */,
 				1DBBEBBE294B9D1C00739C73 /* FakeBookStatusStackView.swift in Sources */,
 				1D2FDC1D2950DBC7000CF9A7 /* Interactor.swift in Sources */,
+				1D0A9A842952305B0024137D /* LoginViewModel.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,

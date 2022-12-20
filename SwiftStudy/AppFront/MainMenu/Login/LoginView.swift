@@ -7,18 +7,28 @@
 
 import SwiftUI
 
-final class LoginViewController: UIHostingController<LoginView> {
-    init() {
-        super.init(rootView: LoginView())
-    }
-    @MainActor required dynamic init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
 struct LoginView: View {
+    @StateObject private var loginViewModel = LoginViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(.label).ignoresSafeArea()
+            VStack(spacing: UIScreen.main.bounds.height*0.01) {
+                Text("Welcome")
+                    .foregroundColor(Color(.reverseDark))
+                    .font(Font.system(size: 30, weight: .bold))
+                Text("Login With Your Email")
+                    .foregroundColor(Color(.reverseDark))
+                TextField("Email", text: $loginViewModel.emailText)
+                    .border(.white, width: 0.5)
+                    .frame(height: UIScreen.main.bounds.height*0.05)
+                TextField("Password", text: $loginViewModel.passwordText)
+                    .border(.white, width: 0.5)
+                    .frame(height: UIScreen.main.bounds.height*0.05)
+                Button("Tap Me") {
+                    print("Lero")
+                }
+            }
+        }
     }
 }
 
