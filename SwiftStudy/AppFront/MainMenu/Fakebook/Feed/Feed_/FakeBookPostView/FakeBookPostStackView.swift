@@ -56,9 +56,12 @@ final class FakeBookPostStackView: UIStackView {
         let perfilStackView = UIStackView(arrangedSubviews: [perfilButton, perfilName.stackView, plusButton])
         return perfilStackView
     }()
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setup()
+    }
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     private func createPostContentImageView(_ image: UIImage) {
         let postContentImageView = Create.element.imageView(image)

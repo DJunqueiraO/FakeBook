@@ -11,9 +11,16 @@ final class FakeBookPostButtonsStackView: UIStackView {
     let likeButton = Create.element.button("Like", image: .star)
     let commentButton = Create.element.button("Comment", image: .message)
     let shareButton = Create.element.button("Share", image: .share)
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setup()
+        print("init", Calendar.current.component(.nanosecond, from: Date()))
+    }
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    override func layoutSubviews() {
+        print("layoutSubviews", Calendar.current.component(.nanosecond, from: Date()))
     }
 }
 
