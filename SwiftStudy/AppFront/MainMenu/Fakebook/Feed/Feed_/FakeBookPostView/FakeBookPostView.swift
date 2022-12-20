@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FakeBookPostView: UIView {
+final class FakeBookPostView: UIStackView {
     var post: FakeBookPost? = nil {
         didSet {
             if let image = post?.perfilImage {perfilButton.setImage(UIImage(named: image), for: .normal)}
@@ -23,20 +23,18 @@ final class FakeBookPostView: UIView {
         perfilButton.imageView?.clipsToBounds = true
         return perfilButton
     }()
-    private struct PerfilName {let stackView: UIStackView, label: UILabel}
-    private lazy var perfilName: PerfilName = {
+    private lazy var perfilName: (stackView: UIStackView, label: UILabel) = {
         let perfilNameLabel = Create.element.label()
         let perfilNameStackView = UIStackView(arrangedSubviews: [perfilNameLabel])
         perfilNameStackView.axis = .vertical
-        return PerfilName(stackView: perfilNameStackView, label: perfilNameLabel)
+        return (stackView: perfilNameStackView, label: perfilNameLabel)
     }()
     private lazy var plusButton: UIButton = {
         let plusButton = Create.element.button(image: .plus)
         plusButton.tintColor = .lightGray
         return plusButton
     }()
-    private struct PostContent {let stackView: UIStackView, label: UILabel}
-    private lazy var postContent: PostContent = {
+    private lazy var postContent: (stackView: UIStackView, label: UILabel) = {
         let descriptionLabel = Create.element.label()
         descriptionLabel.font = UIFont.systemFont(ofSize: 15)
         let descriptionStackView = UIStackView(arrangedSubviews: [descriptionLabel])
@@ -48,33 +46,18 @@ final class FakeBookPostView: UIView {
                                                           right:  frame.width*0.025)
         let postContentStackView = UIStackView(arrangedSubviews: [descriptionStackView])
         postContentStackView.axis = .vertical
-        return PostContent(stackView: postContentStackView, label: descriptionLabel)
+        return (stackView: postContentStackView, label: descriptionLabel)
     }()
-    private struct Buttons {
-        let stackView: UIStackView, like: UIButton, comment: UIButton, share: UIButton
-    }
-    private lazy var buttons: Buttons = {
-        let likeButton = Create.element.button("Like", image: .star)
-        let commentButton = Create.element.button("Comment", image: .message)
-        let shareButton = Create.element.button("Share", image: .share)
-        let buttonsStackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
-        buttonsStackView.distribution = .fillEqually
-        return Buttons(stackView: buttonsStackView,
-                       like: likeButton,
-                       comment: commentButton,
-                       share: shareButton)
+    private lazy var buttonsStackView: FakeBookPostButtonsStackView = {
+        let buttonsStackView = FakeBookPostButtonsStackView()
+        return buttonsStackView
     }()
-    private lazy var postStackView: UIStackView = {
+    private lazy var perfilStackView: UIStackView = {
         let perfilStackView = UIStackView(arrangedSubviews: [perfilButton, perfilName.stackView, plusButton])
-        let postStackView = Create.element.stackView(arrangedSubviews: [perfilStackView, postContent.stackView, buttons.stackView])
-        return postStackView
+        return perfilStackView
     }()
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func layoutSubviews() {
         setup()
-    }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     private func createPostContentImageView(_ image: UIImage) {
         let postContentImageView = Create.element.imageView(image)
@@ -87,11 +70,10 @@ final class FakeBookPostView: UIView {
 extension FakeBookPostView: Setup {
     func configure() {
         backgroundColor = .reverseDark
-        addSubview(postStackView)
+        axis = .vertical
+        addArrangedSubviews([perfilStackView, postContent.stackView, buttonsStackView])
     }
     func constrain() {
-        postStackView.enableAutoLayout
-            .constraint(attributes: [.top, .leading, .trailing, .bottom])
         perfilButton.enableAutoLayout
             .constraint(attribute: .width, multiplier: 0.2)
             .constraint(attributesAttributes: [.height: .width], to: perfilButton)
@@ -100,8 +82,6 @@ extension FakeBookPostView: Setup {
             .constraint(attributes: [.width, .height],
                         multiplier: 0.7)
             .layer.cornerRadius = frame.height*0.7*0.25*0.2
-        perfilName.stackView.enableAutoLayout
-            .constraint(attribute: .width, multiplier: 0.6)
         plusButton.enableAutoLayout.enableAutoLayout
             .constraint(attribute: .width, multiplier: 0.2)
             .constraint(attributesAttributes: [.height: .width], to: perfilButton)
@@ -109,7 +89,5 @@ extension FakeBookPostView: Setup {
             .constraint(attributes: [.centerX, .centerY])
             .constraint(attributes: [.width, .height],
                         multiplier: 0.5)
-        buttons.stackView.enableAutoLayout
-            .constraint(attributesAttributes: [.height: .width], multiplier: 0.05)
     }
 }

@@ -16,6 +16,7 @@
 		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
+		1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */; };
 		1D66F430294D1E4D00797CDF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F42F294D1E4D00797CDF /* Network.swift */; };
 		1D66F432294D232400797CDF /* FakeBookPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F431294D232400797CDF /* FakeBookPerfil.swift */; };
 		1D66F434294D28AD00797CDF /* FakeBookPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FakeBookPostsApi.json */; };
@@ -67,6 +68,7 @@
 		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostButtons.swift; sourceTree = "<group>"; };
 		1D66F42F294D1E4D00797CDF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1D66F431294D232400797CDF /* FakeBookPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPerfil.swift; sourceTree = "<group>"; };
 		1D66F433294D273D00797CDF /* FakeBookPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookPostsApi.json; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		1DA7C7F6294C9CA7009E1368 /* FakeBookPostView */ = {
 			isa = PBXGroup;
 			children = (
+				1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */,
 				1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */,
 			);
 			path = FakeBookPostView;
@@ -544,6 +547,7 @@
 				1DA7C806294CB97F009E1368 /* FakeBookPost.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
 				1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */,
+				1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */,
 				1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
 				1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */,
