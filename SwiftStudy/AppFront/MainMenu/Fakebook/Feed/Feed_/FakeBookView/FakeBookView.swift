@@ -45,10 +45,10 @@ final class FakeBookView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    private func createPostView(_ post: FakeBookPost?) {
-        let postView = FakeBookPostView(frame: frame)
-        postView.post = post
-        scroll.toScrollStackView.addArrangedSubview(postView)
+    private func createPostStackView(_ post: FakeBookPost?) {
+        let postStackView = FakeBookPostStackView(frame: frame)
+        postStackView.post = post
+        scroll.toScrollStackView.addArrangedSubview(postStackView)
     }
 }
 
@@ -63,11 +63,11 @@ extension FakeBookView: Setup {
         scroll.view.enableAutoLayout
             .constraint(attributes: [.top, .leading, .trailing, .bottom], to: safeAreaLayoutGuide)
         navigationCollectionView.enableAutoLayout
-            .shape(height: frame.height*0.075)
+            .constraint(attributesAttributes: [.height: .width], multiplier: 0.15)
         statusStackView.enableAutoLayout
-            .shape(height: frame.height*0.1)
+            .constraint(attributesAttributes: [.height: .width], multiplier: 0.2)
         storiesStackView.enableAutoLayout
-            .shape(height: frame.height*0.2)
+            .constraint(attributesAttributes: [.height: .width], multiplier: 0.4)
     }
 }
 
@@ -77,7 +77,7 @@ extension FakeBookView: FakeBookViewModelDelegate {
     }
     func fakeBookViewModel(_ post: FakeBookPost) {
         Task {[weak self] in
-            self?.createPostView(post)
+            self?.createPostStackView(post)
         }
     }
     func fakeBookViewModel(_ stories: [FakeBookStory]) {

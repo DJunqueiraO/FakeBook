@@ -22,7 +22,9 @@ class UserPresenter: AnyPresenter {
     var router: AnyRouter?
     var interactor: AnyInteractor? {
         didSet {
-            interactor?.getUsers()
+            Task {
+                await interactor?.getUsers()
+            }
         }
     }
     var view: AnyView?
@@ -31,7 +33,7 @@ class UserPresenter: AnyPresenter {
             case .success(let users):
                 view?.update(with: users)
             case .failure:
-            view?.update(with: "Something went wrong")
+                view?.update(with: "Something went wrong")
         }
     }
 }

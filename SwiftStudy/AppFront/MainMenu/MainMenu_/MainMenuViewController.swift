@@ -11,7 +11,7 @@ final class MainMenuViewController: UIViewController {
     private let viewControllers = [AccessControlViewController(),
                                    StaticViewController(),
                                    SpinnerViewController(),
-                                   UserRouter.start().entry as Any,
+//                                   UserRouter.start().entry as Any,
                                    FakeBookViewController()]
     private lazy var table: (view: UITableView, cellIdedntifier: String) = {
         let tableView = UITableView()

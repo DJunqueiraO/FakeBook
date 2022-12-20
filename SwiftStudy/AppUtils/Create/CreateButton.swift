@@ -8,9 +8,11 @@
 import UIKit
 
 extension Create {
-    func button(_ title: String? = nil, image: UIImage? = nil,
+    func button(_ title: String? = nil,
+                image: UIImage? = nil,
                 handler: UIActionHandler? = nil) -> UIButton {
         let button = UIButton()
+        button.tintColor = .label
         if let handler = handler {button.addAction(UIAction(handler: handler), for: .touchUpInside)}
         if let title = title {
             button.setTitle(title, for: .normal)

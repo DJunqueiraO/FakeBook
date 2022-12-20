@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FakeBookPostView: UIView {
+final class FakeBookPostStackView: UIStackView {
     var post: FakeBookPost? = nil {
         didSet {
             if let image = post?.perfilImage {perfilButton.setImage(UIImage(named: image), for: .normal)}
@@ -48,16 +48,19 @@ final class FakeBookPostView: UIView {
         postContentStackView.axis = .vertical
         return (stackView: postContentStackView, label: descriptionLabel)
     }()
-    private lazy var postStackView: UIStackView = {
+    private lazy var buttonsStackView: FakeBookPostButtonsStackView = {
+        let buttonsStackView = FakeBookPostButtonsStackView()
+        return buttonsStackView
+    }()
+    private lazy var perfilStackView: UIStackView = {
         let perfilStackView = UIStackView(arrangedSubviews: [perfilButton, perfilName.stackView, plusButton])
-        let postStackView = Create.element.stackView(arrangedSubviews: [perfilStackView, postContent.stackView])
-        return postStackView
+        return perfilStackView
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    required init?(coder: NSCoder) {
+    required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     private func createPostContentImageView(_ image: UIImage) {
@@ -68,14 +71,13 @@ final class FakeBookPostView: UIView {
     }
 }
 
-extension FakeBookPostView: Setup {
+extension FakeBookPostStackView: Setup {
     func configure() {
         backgroundColor = .reverseDark
-        addSubview(postStackView)
+        axis = .vertical
+        addArrangedSubviews([perfilStackView, postContent.stackView, buttonsStackView])
     }
     func constrain() {
-        postStackView.enableAutoLayout
-            .constraint(attributes: [.top, .leading, .trailing, .bottom])
         perfilButton.enableAutoLayout
             .constraint(attribute: .width, multiplier: 0.2)
             .constraint(attributesAttributes: [.height: .width], to: perfilButton)
@@ -84,8 +86,6 @@ extension FakeBookPostView: Setup {
             .constraint(attributes: [.width, .height],
                         multiplier: 0.7)
             .layer.cornerRadius = frame.height*0.7*0.25*0.2
-        perfilName.stackView.enableAutoLayout
-            .constraint(attribute: .width, multiplier: 0.6)
         plusButton.enableAutoLayout.enableAutoLayout
             .constraint(attribute: .width, multiplier: 0.2)
             .constraint(attributesAttributes: [.height: .width], to: perfilButton)

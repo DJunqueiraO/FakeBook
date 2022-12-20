@@ -13,6 +13,9 @@ extension UIImage {
     class var gallery: UIImage? {UIImage(systemName: "photo.on.rectangle.angled")}
     class var plusFill: UIImage? {UIImage(systemName: "plus.circle.fill")}
     class var plus: UIImage? {UIImage(systemName: "plus.circle")}
+    class var star: UIImage? {UIImage(systemName: "star")}
+    class var share: UIImage? {UIImage(systemName: "arrowshape.turn.up.backward")}
+    class var message: UIImage? {UIImage(systemName: "message")}
     class var gatsu: UIImage? {UIImage(named: "Gatsu")}
     class var griffith: UIImage? {UIImage(named: "Griffith")}
     class var godo: UIImage? {UIImage(named: "Godo")}

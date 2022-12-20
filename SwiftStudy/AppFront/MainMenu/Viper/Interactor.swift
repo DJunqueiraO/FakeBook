@@ -9,23 +9,20 @@ import Foundation
 
 protocol AnyInteractor {
     var presenter: AnyPresenter? {get set}
-    func getUsers()
+    func getUsers() async
 }
 
 class UserInteractor: AnyInteractor {
     var presenter: AnyPresenter?
-    func getUsers() {
+    func getUsers() async {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else {return}
-        URLSession.shared.dataTask(with: url) {[weak self] data, response, error in
-            guard let data = data, error == nil else {
-                self?.presenter?.interactorDidFetchUsers(with: .failure(Errors.failed)); return
-            }
-            do {
-                let entities = try JSONDecoder().decode([User].self, from: data)
-                self?.presenter?.interactorDidFetchUsers(with: .success(entities)); return
-            } catch {
-                self?.presenter?.interactorDidFetchUsers(with: .failure(error)); return
-            }
-        }.resume()
+        do {
+            let (data, response) = try await URLSession.shared.data(from: url)
+            print("RESPONSE:", response)
+            let entities = try JSONDecoder().decode([User].self, from: data)
+            presenter?.interactorDidFetchUsers(with: .success(entities))
+        } catch {
+            presenter?.interactorDidFetchUsers(with: .failure(error))
+        }
     }
 }

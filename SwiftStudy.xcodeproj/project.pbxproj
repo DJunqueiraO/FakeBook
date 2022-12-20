@@ -16,12 +16,13 @@
 		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
+		1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */; };
 		1D66F430294D1E4D00797CDF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F42F294D1E4D00797CDF /* Network.swift */; };
 		1D66F432294D232400797CDF /* FakeBookPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F431294D232400797CDF /* FakeBookPerfil.swift */; };
 		1D66F434294D28AD00797CDF /* FakeBookPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FakeBookPostsApi.json */; };
 		1D66F436294D290500797CDF /* FakeBookStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FakeBookStoriesApi.json */; };
 		1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F437294D29A300797CDF /* FakeBookViewModel.swift */; };
-		1DA7C7F8294C9CCA009E1368 /* FakeBookPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */; };
+		1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorCustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorCustomColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
 		1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C802294CB28A009E1368 /* CreateImageView.swift */; };
@@ -46,6 +47,7 @@
 		1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */; };
 		1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */; };
 		1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */; };
+		1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAAA1429511CA100098126 /* resizeImageView.swift */; };
 		1DBBEBAF294B579900739C73 /* FakeBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */; };
 		1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */; };
 		1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBB5294B847A00739C73 /* FakeBookView.swift */; };
@@ -66,12 +68,13 @@
 		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostButtons.swift; sourceTree = "<group>"; };
 		1D66F42F294D1E4D00797CDF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1D66F431294D232400797CDF /* FakeBookPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPerfil.swift; sourceTree = "<group>"; };
 		1D66F433294D273D00797CDF /* FakeBookPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FakeBookStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookStoriesApi.json; sourceTree = "<group>"; };
 		1D66F437294D29A300797CDF /* FakeBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewModel.swift; sourceTree = "<group>"; };
-		1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostView.swift; sourceTree = "<group>"; };
+		1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorCustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorCustomColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
 		1DA7C802294CB28A009E1368 /* CreateImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageView.swift; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		1DB9E9EE294A40C000FD4189 /* CreateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLabel.swift; sourceTree = "<group>"; };
 		1DB9E9F0294A40CC00FD4189 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 		1DB9E9F2294A411800FD4189 /* CreateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigationController.swift; sourceTree = "<group>"; };
+		1DBAAA1429511CA100098126 /* resizeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resizeImageView.swift; sourceTree = "<group>"; };
 		1DBBEBAE294B579900739C73 /* FakeBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewController.swift; sourceTree = "<group>"; };
 		1DBBEBB3294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookNavigationCollectionView.swift; sourceTree = "<group>"; };
 		1DBBEBB5294B847A00739C73 /* FakeBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookView.swift; sourceTree = "<group>"; };
@@ -189,7 +193,8 @@
 		1DA7C7F6294C9CA7009E1368 /* FakeBookPostView */ = {
 			isa = PBXGroup;
 			children = (
-				1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */,
+				1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */,
+				1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */,
 			);
 			path = FakeBookPostView;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DBAAA1329511C6300098126 /* UIButton */,
 				1DA7C807294CBE25009E1368 /* UIImage */,
 				1DA7C7FC294CA917009E1368 /* UIColor */,
 				1D413981294BA474005BFA16 /* UINavigationController */,
@@ -406,7 +412,15 @@
 			path = Spinner;
 			sourceTree = "<group>";
 		};
-		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
+		1DBAAA0F29510F5500098126 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAAA1029510F7100098126 /* Feed_ */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1DBAAA1029510F7100098126 /* Feed_ */ = {
 			isa = PBXGroup;
 			children = (
 				1D66F433294D273D00797CDF /* FakeBookPostsApi.json */,
@@ -418,6 +432,22 @@
 				1DA7C7F6294C9CA7009E1368 /* FakeBookPostView */,
 				1D413987294BB955005BFA16 /* FakeBookView */,
 				1D413988294BB95B005BFA16 /* FakeBookViewController */,
+			);
+			path = Feed_;
+			sourceTree = "<group>";
+		};
+		1DBAAA1329511C6300098126 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAAA1429511CA100098126 /* resizeImageView.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
+			isa = PBXGroup;
+			children = (
+				1DBAAA0F29510F5500098126 /* Feed */,
 			);
 			path = Fakebook;
 			sourceTree = "<group>";
@@ -506,16 +536,18 @@
 				1DB9E9D1294A05A800FD4189 /* UIScrollViewHierarchy.swift in Sources */,
 				1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */,
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
+				1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1D66F430294D1E4D00797CDF /* Network.swift in Sources */,
-				1DA7C7F8294C9CCA009E1368 /* FakeBookPostView.swift in Sources */,
+				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
 				1DA7C806294CB97F009E1368 /* FakeBookPost.swift in Sources */,
 				1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */,
 				1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */,
+				1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */,
 				1DBBEBB4294B7FBF00739C73 /* FakeBookNavigationCollectionView.swift in Sources */,
 				1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */,
 				1DBBEBB6294B847A00739C73 /* FakeBookView.swift in Sources */,
