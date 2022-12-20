@@ -46,7 +46,7 @@ final class FakeBookView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     private func createPostView(_ post: FakeBookPost?) {
-        let postView = FakeBookPostView(frame: frame)
+        let postView = FakeBookPostStackView(frame: frame)
         postView.post = post
         scroll.toScrollStackView.addArrangedSubview(postView)
     }

@@ -12,6 +12,7 @@ final class FakeBookPostButtonsStackView: UIStackView {
     let commentButton = Create.element.button("Comment", image: .message)
     let shareButton = Create.element.button("Share", image: .share)
     override func layoutSubviews() {
+        super.layoutSubviews()
         setup()
     }
 }

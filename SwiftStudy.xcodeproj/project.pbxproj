@@ -22,7 +22,7 @@
 		1D66F434294D28AD00797CDF /* FakeBookPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FakeBookPostsApi.json */; };
 		1D66F436294D290500797CDF /* FakeBookStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FakeBookStoriesApi.json */; };
 		1D66F438294D29A300797CDF /* FakeBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F437294D29A300797CDF /* FakeBookViewModel.swift */; };
-		1DA7C7F8294C9CCA009E1368 /* FakeBookPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */; };
+		1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorCustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorCustomColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
 		1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C802294CB28A009E1368 /* CreateImageView.swift */; };
@@ -74,7 +74,7 @@
 		1D66F433294D273D00797CDF /* FakeBookPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FakeBookStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeBookStoriesApi.json; sourceTree = "<group>"; };
 		1D66F437294D29A300797CDF /* FakeBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookViewModel.swift; sourceTree = "<group>"; };
-		1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostView.swift; sourceTree = "<group>"; };
+		1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorCustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorCustomColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
 		1DA7C802294CB28A009E1368 /* CreateImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageView.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */,
-				1DA7C7F7294C9CCA009E1368 /* FakeBookPostView.swift */,
+				1DA7C7F7294C9CCA009E1368 /* FakeBookPostStackView.swift */,
 			);
 			path = FakeBookPostView;
 			sourceTree = "<group>";
@@ -540,7 +540,7 @@
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
 				1DB9E9EB294A3A9C00FD4189 /* SpinnerViewController.swift in Sources */,
 				1D66F430294D1E4D00797CDF /* Network.swift in Sources */,
-				1DA7C7F8294C9CCA009E1368 /* FakeBookPostView.swift in Sources */,
+				1DA7C7F8294C9CCA009E1368 /* FakeBookPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1DB9E9B5294A02B700FD4189 /* MainMenuViewController.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,

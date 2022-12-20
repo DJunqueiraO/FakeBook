@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FakeBookPostView: UIStackView {
+final class FakeBookPostStackView: UIStackView {
     var post: FakeBookPost? = nil {
         didSet {
             if let image = post?.perfilImage {perfilButton.setImage(UIImage(named: image), for: .normal)}
@@ -57,6 +57,7 @@ final class FakeBookPostView: UIStackView {
         return perfilStackView
     }()
     override func layoutSubviews() {
+        super.layoutSubviews()
         setup()
     }
     private func createPostContentImageView(_ image: UIImage) {
@@ -67,7 +68,7 @@ final class FakeBookPostView: UIStackView {
     }
 }
 
-extension FakeBookPostView: Setup {
+extension FakeBookPostStackView: Setup {
     func configure() {
         backgroundColor = .reverseDark
         axis = .vertical
