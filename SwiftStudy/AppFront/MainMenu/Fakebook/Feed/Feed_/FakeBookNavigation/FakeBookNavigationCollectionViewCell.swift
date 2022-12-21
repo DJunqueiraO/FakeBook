@@ -27,9 +27,10 @@ final class FakeBookNavigationCollectionViewCell: UICollectionViewCell {
     }
     override var isSelected: Bool {
         didSet {
-            print(image)
             if isSelected {
-                image.append(".fill")
+                imageView.image = UIImage(systemName: image + ".fill")
+            } else {
+                imageView.image = UIImage(systemName: image)
             }
         }
     }
