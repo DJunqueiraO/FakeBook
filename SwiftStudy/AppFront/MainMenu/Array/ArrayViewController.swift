@@ -30,7 +30,7 @@ final class ArrayViewController: UIViewController {
         print(ages)
     }
     private func arrayExerciceII() {
-        var colors = ["red", "green", "green", "black", "blue", "yellow", "red", "green", "yellow", "red", "red", "green", "green", "grey", "purple", "orange", "grey", "blue", "red", "green", "yellow", "orange", "purple", "black", "red", "blue", "green", "orange", "blue", "white", "yellow", "blue", "red", "green", "orange", "purple", "blue", "black"]
+        let colors = ["red", "green", "green", "black", "blue", "yellow", "red", "green", "yellow", "red", "red", "green", "green", "grey", "purple", "orange", "grey", "blue", "red", "green", "yellow", "orange", "purple", "black", "red", "blue", "green", "orange", "blue", "white", "yellow", "blue", "red", "green", "orange", "purple", "blue", "black"]
         print(getMostCommonColor(colors))
     }
     func arrayToDictionary<T>(_ array: [T]) -> [T: Int] {
@@ -47,7 +47,7 @@ final class ArrayViewController: UIViewController {
     func getMostCommonColor(_ values: [String]) -> [String] {
         var topColors: [String] = []
         print(arrayToDictionary(values))
-        var colorDictionary: [String: Int] = arrayToDictionary(values)
+        let colorDictionary: [String: Int] = arrayToDictionary(values)
         let highestValue = colorDictionary.values.max()
         for (color, _) in colorDictionary where colorDictionary[color] == highestValue {
             topColors.append(color)
