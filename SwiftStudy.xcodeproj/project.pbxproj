@@ -16,6 +16,7 @@
 		1D2FDC1F2950DBD5000CF9A7 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC1E2950DBD5000CF9A7 /* Presenter.swift */; };
 		1D2FDC212950DBE1000CF9A7 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC202950DBE1000CF9A7 /* Entity.swift */; };
 		1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2FDC222950DBED000CF9A7 /* Router.swift */; };
+		1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D332C9F29536E190080F61F /* ArrayViewController.swift */; };
 		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
@@ -74,6 +75,7 @@
 		1D2FDC1E2950DBD5000CF9A7 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		1D2FDC202950DBE1000CF9A7 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		1D2FDC222950DBED000CF9A7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		1D332C9F29536E190080F61F /* ArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
 		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 				1D0A9A85295233A00024137D /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		1D332C9E29536DFF0080F61F /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				1D332C9F29536E190080F61F /* ArrayViewController.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 		1D413981294BA474005BFA16 /* UINavigationController */ = {
@@ -353,22 +363,23 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E4294A135200FD4189 /* MainMenu_ */,
+				1D332C9E29536DFF0080F61F /* Array */,
 				1DBBEBAD294B576B00739C73 /* Fakebook */,
 				1DB9E9E9294A3A8800FD4189 /* Spinner */,
 				1DB9E9E8294A397100FD4189 /* Viper */,
 				1DB9E9DE294A0FA300FD4189 /* Static */,
-				1DB9E9D4294A0A0F00FD4189 /* AccessControl */,
+				1DB9E9D4294A0A0F00FD4189 /* Access */,
 				1D0A9A8029522BE40024137D /* Login */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
 		};
-		1DB9E9D4294A0A0F00FD4189 /* AccessControl */ = {
+		1DB9E9D4294A0A0F00FD4189 /* Access */ = {
 			isa = PBXGroup;
 			children = (
 				1DB9E9D5294A0A2D00FD4189 /* AccessControllViewController.swift */,
 			);
-			path = AccessControl;
+			path = Access;
 			sourceTree = "<group>";
 		};
 		1DB9E9D9294A0ACB00FD4189 /* Assets */ = {
@@ -600,6 +611,7 @@
 				1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
+				1D332CA029536E190080F61F /* ArrayViewController.swift in Sources */,
 				1D2FDC1B2950DBB9000CF9A7 /* View.swift in Sources */,
 				1DB9E9E2294A111F00FD4189 /* Video.swift in Sources */,
 				1D2FDC232950DBED000CF9A7 /* Router.swift in Sources */,

@@ -9,8 +9,9 @@ import UIKit
 import SwiftUI
 
 final class MainMenuViewController: UIViewController {
-    private let viewControllers = [AccessControlViewController(),
+    private let viewControllers = [AccessViewController(),
                                    StaticViewController(),
+                                   ArrayViewController(),
                                    SpinnerViewController(),
                                    LoginViewController(),
 //                                   UserRouter.start().entry as Any,
