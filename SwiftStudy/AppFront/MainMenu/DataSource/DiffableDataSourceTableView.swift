@@ -49,4 +49,9 @@ extension DiffableDataSourceTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.frame.height*0.1
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let video = diffableDataSource.itemIdentifier(for: indexPath) else {return}
+        print(video.title)
+    }
 }
