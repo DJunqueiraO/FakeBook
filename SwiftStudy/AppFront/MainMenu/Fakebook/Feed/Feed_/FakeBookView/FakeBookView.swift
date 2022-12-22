@@ -68,7 +68,6 @@ extension FakeBookView: Setup {
             .constraint(attributesAttributes: [.height: .width], multiplier: 0.2)
         storiesStackView.enableAutoLayout
             .constraint(attributesAttributes: [.height: .width], multiplier: 0.4)
-        Network.write()
     }
 }
 

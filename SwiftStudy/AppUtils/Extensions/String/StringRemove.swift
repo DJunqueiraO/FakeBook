@@ -22,18 +22,4 @@ extension String {
         }
         return result
     }
-    func removeLast(_ interval: ClosedRange<Int>) -> String {
-        var result = self
-        for _ in interval {
-            result.removeLast()
-        }
-        return result
-    }
-    func removeFirst(_ interval: ClosedRange<Int>) -> String {
-        var result = self
-        for _ in interval {
-            result.removeFirst()
-        }
-        return result
-    }
 }

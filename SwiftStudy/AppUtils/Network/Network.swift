@@ -33,14 +33,4 @@ struct Network {
         }
         return model
     }
-    static func write() {
-        guard let url = Bundle.main.url(forResource: "FakeBookPostsApi", withExtension: "json") else {
-            print("ERROR: File not found"); return
-        }
-        guard let data = try? Data(contentsOf: url) else {
-            print("ERROR: Unable to assign data"); return
-        }
-        let file = FileManager.default.createFile(atPath: url.absoluteString.removeLast("FakeBookPostsApi.json".count) + "/test.json", contents: data)
-        print(file.description)
-    }
 }
