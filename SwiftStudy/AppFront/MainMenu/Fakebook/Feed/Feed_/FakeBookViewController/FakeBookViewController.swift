@@ -24,7 +24,7 @@ final class FakeBookViewController: UIViewController {
 extension FakeBookViewController: Setup {
     func configure() {
         view = FakeBookView(frame: view.frame)
-        title = "\(type(of: self))".removeLast(0...13)
+        title = "\(type(of: self))".removeLast(13)
         navigationItem.rightBarButtonItems = rightBarButtonItems
     }
 }

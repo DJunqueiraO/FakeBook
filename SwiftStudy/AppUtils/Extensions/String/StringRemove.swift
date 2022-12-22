@@ -8,16 +8,16 @@
 import Foundation
 
 extension String {
-    func removeLast(_ interval: ClosedRange<Int>) -> String {
+    func removeLast(_ times: Int) -> String {
         var result = self
-        for _ in interval {
+        for _ in 0...times {
             result.removeLast()
         }
         return result
     }
-    func removeFirst(_ interval: ClosedRange<Int>) -> String {
+    func removeFirst(_ times: Int) -> String {
         var result = self
-        for _ in interval {
+        for _ in 0...times {
             result.removeFirst()
         }
         return result

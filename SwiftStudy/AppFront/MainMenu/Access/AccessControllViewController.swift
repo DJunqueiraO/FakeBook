@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AccessControlViewController: UIViewController {
+final class AccessViewController: UIViewController {
     fileprivate func printLero() {
         print("Lero Lero")
     }
@@ -18,14 +18,14 @@ final class AccessControlViewController: UIViewController {
     }
 }
 
-extension AccessControlViewController: Setup {
+extension AccessViewController: Setup {
     func configure() {
         view.backgroundColor = .green
     }
 }
 
 class FilePrivateObject {
-    let accessControlViewController = AccessControlViewController()
+    let accessControlViewController = AccessViewController()
     func callLero() {
         accessControlViewController.printLero()
     }

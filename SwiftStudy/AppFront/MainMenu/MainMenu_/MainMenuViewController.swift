@@ -9,8 +9,9 @@ import UIKit
 import SwiftUI
 
 final class MainMenuViewController: UIViewController {
-    private let viewControllers = [AccessControlViewController(),
-                                   StaticViewController(),
+    private let viewControllers = [AccessViewController(),
+                                   DataSourceViewController(),
+                                   ArrayViewController(),
                                    SpinnerViewController(),
                                    LoginViewController(),
 //                                   UserRouter.start().entry as Any,
@@ -37,7 +38,7 @@ final class MainMenuViewController: UIViewController {
 
 extension MainMenuViewController: Setup {
     func configure() {
-        title = "\(type(of: self))".removeLast(0...13)
+        title = "\(type(of: self))".removeLast(13)
         view.backgroundColor = .blue
         view.addSubview(table.view)
     }
@@ -62,7 +63,7 @@ extension MainMenuViewController: UITableViewDelegate, UITableViewDataSource {
                                                  for: indexPath)
         cell.backgroundColor = .yellow
 //        guard let viewController = viewControllers[indexPath.row] as? UIViewController else {return cell}
-        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))".removeLast(0...13))
+        let label = Create.element.label("\(type(of: viewControllers[indexPath.row]))".removeLast(13))
         label.textColor = .black
         cell.contentView.addSubview(label)
         label.enableAutoLayout
