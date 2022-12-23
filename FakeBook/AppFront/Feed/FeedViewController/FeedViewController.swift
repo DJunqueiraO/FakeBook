@@ -9,7 +9,7 @@ import UIKit
 
 final class FeedViewController: UIViewController {
     private lazy var fakeBookView: FeedView = {
-        let fakeBookView = FeedView(frame: view.frame)
+        let fakeBookView = FeedView()
         fakeBookView.delegate = self
         return fakeBookView
     }()

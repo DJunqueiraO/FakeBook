@@ -22,6 +22,7 @@
 		1D66F434294D28AD00797CDF /* FeedPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FeedPostsApi.json */; };
 		1D66F436294D290500797CDF /* FeedStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FeedStoriesApi.json */; };
 		1D66F438294D29A300797CDF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F437294D29A300797CDF /* FeedViewModel.swift */; };
+		1D841D5429564637002116B7 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D841D5329564637002116B7 /* CommentView.swift */; };
 		1DA7C7F8294C9CCA009E1368 /* FeedPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FeedPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
@@ -69,6 +70,7 @@
 		1D66F433294D273D00797CDF /* FeedPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FeedStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedStoriesApi.json; sourceTree = "<group>"; };
 		1D66F437294D29A300797CDF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		1D841D5329564637002116B7 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		1DA7C7F7294C9CCA009E1368 /* FeedPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */,
+				1D841D5329564637002116B7 /* CommentView.swift */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -448,7 +451,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "Fakebook" */;
+			buildConfigurationList = 1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "FakeBook" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -510,6 +513,7 @@
 				1DBBEBC1294B9E1000739C73 /* UIStackViewHierarchy.swift in Sources */,
 				1DBBEBBE294B9D1C00739C73 /* FeedStatusStackView.swift in Sources */,
 				1D64956C29526C91008AB2D9 /* FeedPostPerfilStackView.swift in Sources */,
+				1D841D5429564637002116B7 /* CommentView.swift in Sources */,
 				1DB9E9C8294A03EC00FD4189 /* Setup.swift in Sources */,
 				1D41398F294BC9C0005BFA16 /* FeedStoriesCollectionViewCell.swift in Sources */,
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
@@ -713,7 +717,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "Fakebook" */ = {
+		1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "FakeBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DB9E9BF294A02B900FD4189 /* Debug */,

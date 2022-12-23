@@ -21,4 +21,6 @@ extension UIImage {
     class var griffith: UIImage? {UIImage(named: "Griffith")}
     class var godo: UIImage? {UIImage(named: "Godo")}
     class var dragonSlayer: UIImage? {UIImage(named: "DragonSlayer")}
+    class var fakeBookLogo: UIImage? {UIImage(named: "FakeBook_1")}
+    class var fakeBookIcon: UIImage? {UIImage(named: "FakeBook_2")}
 }
