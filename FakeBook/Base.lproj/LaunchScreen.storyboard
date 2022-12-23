@@ -15,8 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FakeBook_2" translatesAutoresizingMaskIntoConstraints="NO" id="VX7-2l-WFB">
+                                <rect key="frame" x="98.333333333333329" y="274.66666666666669" width="196.33333333333337" height="303.00000000000006"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FakeBook_1" translatesAutoresizingMaskIntoConstraints="NO" id="NQ0-tX-pVq">
+                                <rect key="frame" x="98.333333333333329" y="189.33333333333334" width="196.33333333333337" height="85.333333333333343"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NQ0-tX-pVq" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="3ww-mS-wTV"/>
+                            <constraint firstItem="VX7-2l-WFB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Klg-H4-5fj"/>
+                            <constraint firstItem="NQ0-tX-pVq" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.1" id="Nqg-bf-hqa"/>
+                            <constraint firstItem="VX7-2l-WFB" firstAttribute="trailing" secondItem="NQ0-tX-pVq" secondAttribute="trailing" id="bs3-lE-YFO"/>
+                            <constraint firstItem="VX7-2l-WFB" firstAttribute="top" secondItem="NQ0-tX-pVq" secondAttribute="bottom" id="eOY-n8-tt5"/>
+                            <constraint firstItem="NQ0-tX-pVq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jQ2-Pi-m6n"/>
+                            <constraint firstItem="VX7-2l-WFB" firstAttribute="leading" secondItem="NQ0-tX-pVq" secondAttribute="leading" id="tDc-ye-S6K"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,6 +42,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FakeBook_1" width="307" height="90"/>
+        <image name="FakeBook_2" width="302" height="303"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
