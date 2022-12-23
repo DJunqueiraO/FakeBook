@@ -9,6 +9,6 @@ import UIKit
 
 extension UIColor {
     class var reverseDark: UIColor {UIColor(named: "reverseDark") ?? UIColor()}
-    class var weakDark: UIColor {UIColor(white: 0, alpha: 1/3)}
+    class var weakDark: UIColor {UIColor(white: 0, alpha: 0.1)}
     class var weakWhite: UIColor {UIColor(white: 1, alpha: 2/3)}
 }

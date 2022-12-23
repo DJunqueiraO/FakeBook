@@ -23,6 +23,7 @@
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */; };
 		1D41DBD52955D08E00C3C251 /* ArrayExercices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */; };
+		1D41DBDA2955E9AF00C3C251 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */; };
 		1D4B6BA42951E11000E22C00 /* FakeBookPostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */; };
 		1D4CDDF22954CEDC00F893BF /* CreateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CDDF12954CEDC00F893BF /* CreateAlert.swift */; };
 		1D4CDDF52954CF0D00F893BF /* UIAlertControllerHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CDDF42954CF0D00F893BF /* UIAlertControllerHierarchy.swift */; };
@@ -99,6 +100,7 @@
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FakeBookStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D41DBD42955D08E00C3C251 /* ArrayExercices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExercices.swift; sourceTree = "<group>"; };
+		1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		1D4B6BA32951E11000E22C00 /* FakeBookPostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPostButtons.swift; sourceTree = "<group>"; };
 		1D4CDDF12954CEDC00F893BF /* CreateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlert.swift; sourceTree = "<group>"; };
 		1D4CDDF42954CF0D00F893BF /* UIAlertControllerHierarchy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerHierarchy.swift; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 				1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		1D41DBD82955E99900C3C251 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				1D41DBD92955E9AF00C3C251 /* CommentViewController.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		1D4CDDF32954CEF600F893BF /* UIAlertController */ = {
@@ -510,15 +520,7 @@
 			path = Spinner;
 			sourceTree = "<group>";
 		};
-		1DBAAA0F29510F5500098126 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				1DBAAA1029510F7100098126 /* Feed_ */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
-		1DBAAA1029510F7100098126 /* Feed_ */ = {
+		1DBAAA1029510F7100098126 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
 				1D66F433294D273D00797CDF /* FakeBookPostsApi.json */,
@@ -531,7 +533,7 @@
 				1D413987294BB955005BFA16 /* FakeBookView */,
 				1D413988294BB95B005BFA16 /* FakeBookViewController */,
 			);
-			path = Feed_;
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		1DBAAA1329511C6300098126 /* UIButton */ = {
@@ -545,7 +547,8 @@
 		1DBBEBAD294B576B00739C73 /* Fakebook */ = {
 			isa = PBXGroup;
 			children = (
-				1DBAAA0F29510F5500098126 /* Feed */,
+				1DBAAA1029510F7100098126 /* Feed */,
+				1D41DBD82955E99900C3C251 /* Comment */,
 			);
 			path = Fakebook;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */,
 				1D64956A2952670C008AB2D9 /* UIViewScreen.swift in Sources */,
 				1D66F432294D232400797CDF /* FakeBookPerfil.swift in Sources */,
+				1D41DBDA2955E9AF00C3C251 /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
