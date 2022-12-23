@@ -10,7 +10,7 @@ import UIKit
 extension Create {
     func alert(title: String?, message: String?, cancelButtonTitle: String? = nil) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.baseView.subviews.first?.backgroundColor = .weakDark
+        alert.baseView.subviews.first?.backgroundColor = .weakWhite
         alert.baseView.subviews.last?.removeFromSuperview()
         alert.baseView.tintColor = .label
         if let cancelButtonTitle = cancelButtonTitle {
