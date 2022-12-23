@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D332CA829537FCC0080F61F /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D332CA729537FCC0080F61F /* SwiftStudyUITests.swift */; };
-		1D332CAA29537FCC0080F61F /* SwiftStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D332CA929537FCC0080F61F /* SwiftStudyUITestsLaunchTests.swift */; };
 		1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */; };
 		1D41398B294BBA2B005BFA16 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */; };
 		1D41398F294BC9C0005BFA16 /* FeedStoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41398E294BC9C0005BFA16 /* FeedStoriesCollectionViewCell.swift */; };
@@ -55,20 +53,7 @@
 		1DBBEBC3294BA26000739C73 /* FeedStoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBEBC2294BA26000739C73 /* FeedStoriesCollectionView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1D332CAB29537FCC0080F61F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1DB9E9A5294A02B700FD4189 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DB9E9AC294A02B700FD4189;
-			remoteInfo = SwiftStudy;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1D332CA529537FCC0080F61F /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D332CA729537FCC0080F61F /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
-		1D332CA929537FCC0080F61F /* SwiftStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D413982294BA48B005BFA16 /* UINavigationControllerNavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerNavigate.swift; sourceTree = "<group>"; };
 		1D41398A294BBA2B005BFA16 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		1D41398E294BC9C0005BFA16 /* FeedStoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -118,13 +103,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D332CA229537FCC0080F61F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1DB9E9AA294A02B700FD4189 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,15 +113,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D332CA629537FCC0080F61F /* SwiftStudyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1D332CA729537FCC0080F61F /* SwiftStudyUITests.swift */,
-				1D332CA929537FCC0080F61F /* SwiftStudyUITestsLaunchTests.swift */,
-			);
-			path = SwiftStudyUITests;
-			sourceTree = "<group>";
-		};
 		1D413981294BA474005BFA16 /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,8 +254,7 @@
 		1DB9E9A4294A02B700FD4189 = {
 			isa = PBXGroup;
 			children = (
-				1DB9E9AF294A02B700FD4189 /* SwiftStudy */,
-				1D332CA629537FCC0080F61F /* SwiftStudyUITests */,
+				1DB9E9AF294A02B700FD4189 /* FakeBook */,
 				1DB9E9AE294A02B700FD4189 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -295,12 +263,11 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9AD294A02B700FD4189 /* SwiftStudy.app */,
-				1D332CA529537FCC0080F61F /* SwiftStudyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DB9E9AF294A02B700FD4189 /* SwiftStudy */ = {
+		1DB9E9AF294A02B700FD4189 /* FakeBook */ = {
 			isa = PBXGroup;
 			children = (
 				1DB9E9C6294A02D000FD4189 /* AppFront */,
@@ -309,7 +276,7 @@
 				1DB9E9BB294A02B900FD4189 /* LaunchScreen.storyboard */,
 				1DB9E9BE294A02B900FD4189 /* Info.plist */,
 			);
-			path = SwiftStudy;
+			path = FakeBook;
 			sourceTree = "<group>";
 		};
 		1DB9E9C4294A02C000FD4189 /* AppUtils */ = {
@@ -449,24 +416,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D332CA429537FCC0080F61F /* SwiftStudyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D332CAD29537FCC0080F61F /* Build configuration list for PBXNativeTarget "SwiftStudyUITests" */;
-			buildPhases = (
-				1D332CA129537FCC0080F61F /* Sources */,
-				1D332CA229537FCC0080F61F /* Frameworks */,
-				1D332CA329537FCC0080F61F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1D332CAC29537FCC0080F61F /* PBXTargetDependency */,
-			);
-			name = SwiftStudyUITests;
-			productName = SwiftStudyUITests;
-			productReference = 1D332CA529537FCC0080F61F /* SwiftStudyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		1DB9E9AC294A02B700FD4189 /* SwiftStudy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DB9E9C1294A02B900FD4189 /* Build configuration list for PBXNativeTarget "SwiftStudy" */;
@@ -494,16 +443,12 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					1D332CA429537FCC0080F61F = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 1DB9E9AC294A02B700FD4189;
-					};
 					1DB9E9AC294A02B700FD4189 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "FakeBook" */;
+			buildConfigurationList = 1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "Fakebook" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -517,19 +462,11 @@
 			projectRoot = "";
 			targets = (
 				1DB9E9AC294A02B700FD4189 /* SwiftStudy */,
-				1D332CA429537FCC0080F61F /* SwiftStudyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D332CA329537FCC0080F61F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1DB9E9AB294A02B700FD4189 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,15 +481,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D332CA129537FCC0080F61F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D332CAA29537FCC0080F61F /* SwiftStudyUITestsLaunchTests.swift in Sources */,
-				1D332CA829537FCC0080F61F /* SwiftStudyUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1DB9E9A9294A02B700FD4189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,14 +530,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1D332CAC29537FCC0080F61F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1DB9E9AC294A02B700FD4189 /* SwiftStudy */;
-			targetProxy = 1D332CAB29537FCC0080F61F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		1DB9E9BB294A02B900FD4189 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -622,42 +542,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1D332CAE29537FCC0080F61F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2N35X62DPN;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-Sys.SwiftStudyUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwiftStudy;
-			};
-			name = Debug;
-		};
-		1D332CAF29537FCC0080F61F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2N35X62DPN;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-Sys.SwiftStudyUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwiftStudy;
-			};
-			name = Release;
-		};
 		1DB9E9BF294A02B900FD4189 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -780,7 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftStudy/Info.plist;
+				INFOPLIST_FILE = FakeBook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -807,7 +691,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftStudy/Info.plist;
+				INFOPLIST_FILE = FakeBook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -829,16 +713,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D332CAD29537FCC0080F61F /* Build configuration list for PBXNativeTarget "SwiftStudyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D332CAE29537FCC0080F61F /* Debug */,
-				1D332CAF29537FCC0080F61F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "FakeBook" */ = {
+		1DB9E9A8294A02B700FD4189 /* Build configuration list for PBXProject "Fakebook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DB9E9BF294A02B900FD4189 /* Debug */,
