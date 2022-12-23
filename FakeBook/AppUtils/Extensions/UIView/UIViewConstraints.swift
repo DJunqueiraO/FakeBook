@@ -8,6 +8,7 @@ extension UIView {
 @discardableResult
     func constraint(attribute: NSLayoutConstraint.Attribute,
                     to item: Any? = nil,
+                    _ itemAttribute: NSLayoutConstraint.Attribute? = nil,
                     relation: NSLayoutConstraint.Relation = .equal,
                     multiplier: CGFloat = 1,
                     constant: CGFloat? = nil) -> Self {
@@ -16,7 +17,7 @@ extension UIView {
                                                    attribute: attribute,
                                                    relatedBy: relation,
                                                    toItem: item ?? superview,
-                                                   attribute: attribute,
+                                                   attribute: itemAttribute ?? attribute,
                                                    multiplier: multiplier,
                                                    constant: constant ?? 0))
         return self
