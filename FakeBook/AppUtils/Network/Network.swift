@@ -25,12 +25,10 @@ struct Network {
         guard let url = Bundle.main.url(forResource: file, withExtension: type) else {
             print("ERROR: File not found"); return nil
         }
-        guard let data = try? Data(contentsOf: url) else {
-            print("ERROR: Unable to assign data"); return nil
-        }
-        guard let model = try? JSONDecoder().decode(T.self, from: data) else {
-            print("ERROR: Could not decode file"); return nil
-        }
-        return model
+        do {
+            let data = try Data(contentsOf: url)
+            let model = try JSONDecoder().decode(T.self, from: data)
+            return model
+        } catch {print("ERROR: \(error)"); return nil}
     }
 }

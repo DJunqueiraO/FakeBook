@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Posts = [Post]
+
 struct Post: Codable {
-    let perfilImage, image, name, description: String?
+    let perfilImage, image, name, description, id: String?
 }
