@@ -33,11 +33,10 @@ final class FeedViewModel {
     )
     func loadData() {
         Task {
-            guard let data = await Network.call(
+            guard let result = await Network.call(
                 from: URL(string: "https://62baed237bdbe01d52938975.mockapi.io/api/FakeBookPosts")
             ) else {return}
-//            guard let posts = Network.read([Post].self, from: "FeedPostsApi") else {return}
-            guard let posts = await Network.decode(Posts.self, from: data) else {return}
+            guard let posts = await Network.decode(Posts.self, from: result.data) else {return}
             self.posts = posts
         }
         Task {

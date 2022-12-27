@@ -8,12 +8,11 @@
 import Foundation
 
 struct Network {
-    static func call(from url: URL?) async -> Data? {
+    static func call(from url: URL?) async -> (data: Data, response: String)? {
         guard let url = url else {print("ERROR: Wrong url"); return nil}
         do {
             let (data, response) = try await URLSession.shared.data(from: url)
-            print("RESPONSE:", response)
-            return data
+            return (data: data, response: "RESPONSE: \(response)")
         } catch {print("ERROR: \(error)"); return nil}
     }
     static func decode<T: Codable>(_ model: T.Type, from data: Data) async -> T? {
@@ -30,5 +29,19 @@ struct Network {
             let model = try JSONDecoder().decode(T.self, from: data)
             return model
         } catch {print("ERROR: \(error)"); return nil}
+    }
+    static func post<T: Codable>(_ model: T, from url: URL?) {
+        guard let url = url else {return}
+        let request = {(data: Data) -> URLRequest in
+            var request = URLRequest(url: url)
+            request.httpMethod = .post
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpBody = data
+            return request
+        }
+        do {
+            let data = try JSONEncoder().encode(model)
+            URLSession.shared.dataTask(with: request(data)).resume()
+        } catch {print("ERROR: \(error)"); return}
     }
 }
