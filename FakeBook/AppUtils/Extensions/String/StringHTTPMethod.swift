@@ -9,4 +9,5 @@ import Foundation
 
 extension String {
     static var post: String {"POST"}
+    static var put: String {"PUT"}
 }

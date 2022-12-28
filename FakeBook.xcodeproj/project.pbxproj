@@ -17,7 +17,7 @@
 		1D64956A2952670C008AB2D9 /* UIViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6495692952670C008AB2D9 /* UIViewScreen.swift */; };
 		1D64956C29526C91008AB2D9 /* FeedPostPerfilStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64956B29526C91008AB2D9 /* FeedPostPerfilStackView.swift */; };
 		1D64956E29526EBD008AB2D9 /* FakeBookPerfilButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64956D29526EBD008AB2D9 /* FakeBookPerfilButton.swift */; };
-		1D66F430294D1E4D00797CDF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F42F294D1E4D00797CDF /* Network.swift */; };
+		1D66F430294D1E4D00797CDF /* NetworkHTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F42F294D1E4D00797CDF /* NetworkHTTPMethods.swift */; };
 		1D66F432294D232400797CDF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F431294D232400797CDF /* Perfil.swift */; };
 		1D66F434294D28AD00797CDF /* FeedPostsApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F433294D273D00797CDF /* FeedPostsApi.json */; };
 		1D66F436294D290500797CDF /* FeedStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FeedStoriesApi.json */; };
@@ -30,7 +30,9 @@
 		1DA7C806294CB97F009E1368 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C805294CB97F009E1368 /* Post.swift */; };
 		1DA7C809294CBE36009E1368 /* UIImageImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C808294CBE36009E1368 /* UIImageImages.swift */; };
 		1DA7C80B294CBF94009E1368 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C80A294CBF94009E1368 /* Story.swift */; };
-		1DB74CC5295B0F560087CD78 /* StringStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB74CC4295B0F560087CD78 /* StringStrings.swift */; };
+		1DB74CC5295B0F560087CD78 /* StringHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB74CC4295B0F560087CD78 /* StringHTTPMethod.swift */; };
+		1DB90091295C6CD90029F4C7 /* NetworkDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB90090295C6CD90029F4C7 /* NetworkDecode.swift */; };
+		1DB90093295C6CE70029F4C7 /* NetworkRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB90092295C6CE70029F4C7 /* NetworkRead.swift */; };
 		1DB9E9B1294A02B700FD4189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9B0294A02B700FD4189 /* AppDelegate.swift */; };
 		1DB9E9B3294A02B700FD4189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E9B2294A02B700FD4189 /* SceneDelegate.swift */; };
 		1DB9E9BA294A02B900FD4189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB9E9B9294A02B900FD4189 /* Assets.xcassets */; };
@@ -66,7 +68,7 @@
 		1D6495692952670C008AB2D9 /* UIViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewScreen.swift; sourceTree = "<group>"; };
 		1D64956B29526C91008AB2D9 /* FeedPostPerfilStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostPerfilStackView.swift; sourceTree = "<group>"; };
 		1D64956D29526EBD008AB2D9 /* FakeBookPerfilButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBookPerfilButton.swift; sourceTree = "<group>"; };
-		1D66F42F294D1E4D00797CDF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1D66F42F294D1E4D00797CDF /* NetworkHTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHTTPMethods.swift; sourceTree = "<group>"; };
 		1D66F431294D232400797CDF /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		1D66F433294D273D00797CDF /* FeedPostsApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedPostsApi.json; sourceTree = "<group>"; };
 		1D66F435294D290500797CDF /* FeedStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedStoriesApi.json; sourceTree = "<group>"; };
@@ -79,7 +81,9 @@
 		1DA7C805294CB97F009E1368 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1DA7C808294CBE36009E1368 /* UIImageImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageImages.swift; sourceTree = "<group>"; };
 		1DA7C80A294CBF94009E1368 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		1DB74CC4295B0F560087CD78 /* StringStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringStrings.swift; sourceTree = "<group>"; };
+		1DB74CC4295B0F560087CD78 /* StringHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHTTPMethod.swift; sourceTree = "<group>"; };
+		1DB90090295C6CD90029F4C7 /* NetworkDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDecode.swift; sourceTree = "<group>"; };
+		1DB90092295C6CE70029F4C7 /* NetworkRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRead.swift; sourceTree = "<group>"; };
 		1DB9E9AD294A02B700FD4189 /* SwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB9E9B0294A02B700FD4189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB9E9B2294A02B700FD4189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,7 +210,9 @@
 			children = (
 				1D7F680A2955F8F400B43FDF /* Models */,
 				1D7F68092955F8E600B43FDF /* API */,
-				1D66F42F294D1E4D00797CDF /* Network.swift */,
+				1D66F42F294D1E4D00797CDF /* NetworkHTTPMethods.swift */,
+				1DB90090295C6CD90029F4C7 /* NetworkDecode.swift */,
+				1DB90092295C6CE70029F4C7 /* NetworkRead.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -385,7 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB9E9E6294A198800FD4189 /* StringRemove.swift */,
-				1DB74CC4295B0F560087CD78 /* StringStrings.swift */,
+				1DB74CC4295B0F560087CD78 /* StringHTTPMethod.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -496,7 +502,7 @@
 				1DA7C803294CB28A009E1368 /* CreateImageView.swift in Sources */,
 				1DBAAA1529511CA100098126 /* resizeImageView.swift in Sources */,
 				1DB9E9CE294A059100FD4189 /* UIViewHierarchy.swift in Sources */,
-				1D66F430294D1E4D00797CDF /* Network.swift in Sources */,
+				1D66F430294D1E4D00797CDF /* NetworkHTTPMethods.swift in Sources */,
 				1DA7C7F8294C9CCA009E1368 /* FeedPostStackView.swift in Sources */,
 				1DB9E9E7294A198800FD4189 /* StringRemove.swift in Sources */,
 				1D413983294BA48B005BFA16 /* UINavigationControllerNavigate.swift in Sources */,
@@ -522,14 +528,16 @@
 				1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */,
 				1DB9E9F3294A411800FD4189 /* CreateNavigationController.swift in Sources */,
 				1DB9E9CC294A058400FD4189 /* UIViewConstraints.swift in Sources */,
-				1DB74CC5295B0F560087CD78 /* StringStrings.swift in Sources */,
+				1DB74CC5295B0F560087CD78 /* StringHTTPMethod.swift in Sources */,
 				1DBBEBAF294B579900739C73 /* FeedViewController.swift in Sources */,
 				1DB9E9EF294A40C000FD4189 /* CreateLabel.swift in Sources */,
 				1DBBEBBC294B945400739C73 /* FeedNavigationCollectionViewCell.swift in Sources */,
 				1D64956E29526EBD008AB2D9 /* FakeBookPerfilButton.swift in Sources */,
 				1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */,
 				1DBBEBC3294BA26000739C73 /* FeedStoriesCollectionView.swift in Sources */,
+				1DB90093295C6CE70029F4C7 /* NetworkRead.swift in Sources */,
 				1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */,
+				1DB90091295C6CD90029F4C7 /* NetworkDecode.swift in Sources */,
 				1D64956A2952670C008AB2D9 /* UIViewScreen.swift in Sources */,
 				1D66F432294D232400797CDF /* Perfil.swift in Sources */,
 				1D41DBDA2955E9AF00C3C251 /* CommentViewController.swift in Sources */,
