@@ -31,10 +31,6 @@ final class FeedViewModel {
     private lazy var navigationCollectionView = FeedNavigationCollectionView(
         imageNames: ["house", "person.and.person", "message", "play.tv", "bell"]
     )
-    func loadData() {
-        loadPosts()
-        loadStories()
-    }
     private func loadPosts() {
         Task {
             guard let result = await Network.get(
@@ -50,5 +46,9 @@ final class FeedViewModel {
             self.stories += stories
         }
         if let image = perfil.image {delegate?.fakeBookViewModel(image)}
+    }
+    func loadData() {
+        loadPosts()
+        loadStories()
     }
 }
