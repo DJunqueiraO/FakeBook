@@ -11,5 +11,5 @@ typealias Posts = [Post]
 
 struct Post: Codable {
     let perfilImage, image, name, description, id: String?
-    let likes, comments, shares: Int?
+    var likes, comments, shares: Int?
 }

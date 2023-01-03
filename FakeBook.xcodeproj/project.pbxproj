@@ -23,6 +23,7 @@
 		1D66F436294D290500797CDF /* FeedStoriesApi.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D66F435294D290500797CDF /* FeedStoriesApi.json */; };
 		1D66F438294D29A300797CDF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D66F437294D29A300797CDF /* FeedViewModel.swift */; };
 		1D841D5429564637002116B7 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D841D5329564637002116B7 /* CommentView.swift */; };
+		1D94C652296496C8004A4144 /* URLEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D94C651296496C8004A4144 /* URLEndPoints.swift */; };
 		1DA7C7F8294C9CCA009E1368 /* FeedPostStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7F7294C9CCA009E1368 /* FeedPostStackView.swift */; };
 		1DA7C7FF294CA92F009E1368 /* UIColorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */; };
 		1DA7C801294CB27A009E1368 /* CreateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C800294CB27A009E1368 /* CreateStackView.swift */; };
@@ -74,6 +75,7 @@
 		1D66F435294D290500797CDF /* FeedStoriesApi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedStoriesApi.json; sourceTree = "<group>"; };
 		1D66F437294D29A300797CDF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		1D841D5329564637002116B7 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		1D94C651296496C8004A4144 /* URLEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndPoints.swift; sourceTree = "<group>"; };
 		1DA7C7F7294C9CCA009E1368 /* FeedPostStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostStackView.swift; sourceTree = "<group>"; };
 		1DA7C7FE294CA92F009E1368 /* UIColorColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorColors.swift; sourceTree = "<group>"; };
 		1DA7C800294CB27A009E1368 /* CreateStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStackView.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 		1DB9E9C9294A055F00FD4189 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DC2D9762964E31500DE5724 /* URL */,
 				1D4CDDF32954CEF600F893BF /* UIAlertController */,
 				1DBAAA1329511C6300098126 /* UIButton */,
 				1DA7C807294CBE25009E1368 /* UIImage */,
@@ -423,6 +426,14 @@
 				1DBBEBC0294B9E1000739C73 /* UIStackViewHierarchy.swift */,
 			);
 			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		1DC2D9762964E31500DE5724 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				1D94C651296496C8004A4144 /* URLEndPoints.swift */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +547,7 @@
 				1DB9E9F1294A40CC00FD4189 /* CreateButton.swift in Sources */,
 				1DBBEBC3294BA26000739C73 /* FeedStoriesCollectionView.swift in Sources */,
 				1DB90093295C6CE70029F4C7 /* NetworkRead.swift in Sources */,
+				1D94C652296496C8004A4144 /* URLEndPoints.swift in Sources */,
 				1DBBEBBA294B920400739C73 /* UIViewUnderline.swift in Sources */,
 				1DB90091295C6CD90029F4C7 /* NetworkDecode.swift in Sources */,
 				1D64956A2952670C008AB2D9 /* UIViewScreen.swift in Sources */,

@@ -32,13 +32,19 @@ final class FeedViewModel {
         imageNames: ["house", "person.and.person", "message", "play.tv", "bell"]
     )
     func loadData() {
+        loadPosts()
+        loadStories()
+    }
+    private func loadPosts() {
         Task {
             guard let result = await Network.get(
-                from: URL(string: "https://62baed237bdbe01d52938975.mockapi.io/api/FakeBookPosts")
+                from: .fakeBookPosts
             ) else {return}
-            guard let posts = await Network.decode(Posts.self, from: result.data) else {return}
+            guard let posts = Network.decode(Posts.self, from: result.data) else {return}
             self.posts = posts
         }
+    }
+    private func loadStories() {
         Task {
             guard let stories = Network.read([Story].self, from: "FeedStoriesApi") else {return}
             self.stories += stories
