@@ -6,7 +6,7 @@
         "description": "\tSe você busca muito alguma coisa, é certo que deixará outras no meio do caminho. Só me sinto vivo quando estou usando a minha espada. Humanos são fracos e morrem facilmente. Mas não importa o quão fracos somos, não importa o quanto somos torturados, não importa quanta dor sentimos, nós ainda queremos viver.",
         "id": "0",
         "likes": 3,
-        "comments": 2,
+        "comments": [],
         "shares": 1
     },
     {
@@ -16,7 +16,7 @@
         "description": "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu.",
         "id": "1",
         "likes": 3,
-        "comments": 2,
+        "comments": [],
         "shares": 1
     },
     {
@@ -26,7 +26,7 @@
         "description": "\tEla era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro.",
         "id": "2",
         "likes": 3,
-        "comments": 2,
+        "comments": [],
         "shares": 1
     },
     {
@@ -36,7 +36,7 @@
         "description": "\tSó me sinto vivo quando estou usando a minha espada.",
         "id": "3",
         "likes": 3,
-        "comments": 2,
+        "comments": ["Ganbino!!", "Ganbino!"],
         "shares": 1
     }
 ]
