@@ -8,10 +8,10 @@
 import UIKit
 
 final class CommentViewController: UIViewController {
-    private let commentView = CommentView()
+    private let commentView: CommentView
     init(_ post: Post?) {
+        commentView = CommentView(post)
         super.init(nibName: nil, bundle: nil)
-        commentView.postStackView.post = post
         setup()
     }
     required init?(coder: NSCoder) {

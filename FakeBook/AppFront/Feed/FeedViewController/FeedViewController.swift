@@ -35,8 +35,8 @@ extension FeedViewController: Setup {
                                    description: "\tSó me sinto vivo quando estou usando a minha espada.",
                                    id: "3",
                                    likes: 3,
-                                   comments: 2,
-                                   shares: 1),
+                                   shares: 1,
+                                   comments: ["Lero Lero"]),
                              from: URL(string: "https://62baed237bdbe01d52938975.mockapi.io/api/FakeBookPosts/3"))
         }
         

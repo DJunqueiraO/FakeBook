@@ -70,9 +70,7 @@ extension FeedPostStackView: Setup {
         backgroundColor = .reverseDark
         axis = .vertical
         addArrangedSubviews([perfilStackView, postContent.stackView, buttonsStackView])
-        
         buttonsStackView.likeButton.addTarget(self, action: #selector(likeButtonTarget), for: .touchUpInside)
-        
     }
     func constrain() {
         perfilStackView.perfilButton.enableAutoLayout
