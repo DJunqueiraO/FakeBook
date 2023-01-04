@@ -48,6 +48,21 @@ final class FeedPostStackView: UIStackView {
         postContentImageView.enableAutoLayout
             .constraint(attributesAttributes: [.height: .width])
     }
+    @objc private func likeButtonTarget(_ sender: UIButton) {
+        guard var post = post,
+              let id = post.id,
+              let likes = post.likes else {return}
+        if sender.isSelected {
+            post.likes = likes + 1
+            Task {
+                await Network.put(post, from: .fakeBookPosts(id))
+            }
+        } else {
+            Task {
+                await Network.put(post, from: .fakeBookPosts(id))
+            }
+        }
+    }
 }
 
 extension FeedPostStackView: Setup {
@@ -55,6 +70,9 @@ extension FeedPostStackView: Setup {
         backgroundColor = .reverseDark
         axis = .vertical
         addArrangedSubviews([perfilStackView, postContent.stackView, buttonsStackView])
+        
+        buttonsStackView.likeButton.addTarget(self, action: #selector(likeButtonTarget), for: .touchUpInside)
+        
     }
     func constrain() {
         perfilStackView.perfilButton.enableAutoLayout

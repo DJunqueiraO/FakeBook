@@ -28,6 +28,18 @@ final class FeedViewController: UIViewController {
 
 extension FeedViewController: Setup {
     func configure() {
+        Task {
+            await Network.put(Post(perfilImage: "Gatsu",
+                                   image: nil,
+                                   name: "Gatsu",
+                                   description: "\tSó me sinto vivo quando estou usando a minha espada.",
+                                   id: "3",
+                                   likes: 3,
+                                   comments: 2,
+                                   shares: 1),
+                             from: URL(string: "https://62baed237bdbe01d52938975.mockapi.io/api/FakeBookPosts/3"))
+        }
+        
         view = fakeBookView
         title = "\(type(of: self))".removeLast(13)
         navigationItem.rightBarButtonItems = rightBarButtonItems

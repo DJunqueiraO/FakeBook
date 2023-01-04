@@ -3,24 +3,40 @@
         "perfilImage": "Gatsu",
         "image": null,
         "name": "Gatsu",
-        "description": "\tSe você busca muito alguma coisa, é certo que deixará outras no meio do caminho. Só me sinto vivo quando estou usando a minha espada. Humanos são fracos e morrem facilmente. Mas não importa o quão fracos somos, não importa o quanto somos torturados, não importa quanta dor sentimos, nós ainda queremos viver."
+        "description": "\tSe você busca muito alguma coisa, é certo que deixará outras no meio do caminho. Só me sinto vivo quando estou usando a minha espada. Humanos são fracos e morrem facilmente. Mas não importa o quão fracos somos, não importa o quanto somos torturados, não importa quanta dor sentimos, nós ainda queremos viver.",
+        "id": "0",
+        "likes": 3,
+        "comments": 2,
+        "shares": 1
     },
     {
         "perfilImage": "Griffith",
         "image": null,
         "name": "Griffith",
-        "description": "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu."
+        "description": "\tUm amigo não deveria só seguir o sonho do outro… Um amigo deveria achar sua própria razão de viver… E se alguém destruisse seu sonho… Ele deveria se defender, mesmo que esse alguém fosse eu.",
+        "id": "1",
+        "likes": 3,
+        "comments": 2,
+        "shares": 1
     },
     {
         "perfilImage": "Godo",
         "image": "DragonSlayer",
         "name": "Godo",
-        "description": "\tEla era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro."
+        "description": "\tEla era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro.",
+        "id": "2",
+        "likes": 3,
+        "comments": 2,
+        "shares": 1
     },
     {
         "perfilImage": "Gatsu",
         "image": null,
         "name": "Gatsu",
-        "description": "\tSó me sinto vivo quando estou usando a minha espada."
+        "description": "\tSó me sinto vivo quando estou usando a minha espada.",
+        "id": "3",
+        "likes": 3,
+        "comments": 2,
+        "shares": 1
     }
 ]

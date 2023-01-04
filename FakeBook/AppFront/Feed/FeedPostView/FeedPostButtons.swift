@@ -10,6 +10,7 @@ import UIKit
 final class FeedPostButtonsStackView: UIStackView {
     let likeButton: UIButton = {
         let likeButton = Create.element.button("Like", image: .star)
+        likeButton.isSelected = false
         likeButton.changesSelectionAsPrimaryAction = true
         likeButton.setImage(.starFill, for: .selected)
         return likeButton
