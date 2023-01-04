@@ -55,7 +55,12 @@ final class FeedPostStackView: UIStackView {
         if sender.isSelected {
             post.likes = likes - 1
             Task {
-                await Network.put(post, from: .fakeBookPosts(id: id))
+                await Network.put(post, from: .fakeBookPosts(id))
+            }
+        } else {
+            post.likes = likes + 1
+            Task {
+                await Network.put(post, from: .fakeBookPosts(id))
             }
         }
     }
