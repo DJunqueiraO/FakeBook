@@ -28,6 +28,7 @@ final class FeedStoriesCollectionView: UICollectionView {
 
 extension FeedStoriesCollectionView: Setup {
     func configure() {
+        backgroundColor = .reverseDark
         delegate = self
         dataSource = self
         register(FeedStoriesCollectionViewCell.self, forCellWithReuseIdentifier: identifier)
