@@ -69,6 +69,7 @@ extension FeedView: Setup {
         addSubview(scroll.view)
         backgroundColor = .reverseDark
         fakeBookViewModel.loadData()
+        
         scroll.toScrollStackView.addArrangedSubviews([navigationCollectionView, statusStackView, storiesStackView])
     }
     func constrain() {
